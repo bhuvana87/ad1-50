@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en"><!-- InstanceBegin template="/Templates/inner.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Classifieds</title>
+<!-- InstanceEndEditable -->
+<!-- Bootstrap core CSS -->
+
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="css/megamenu.css" />
+<link rel="stylesheet" href="css/jquery.bxslider.css" />
+<link rel="stylesheet" href="css/responsive-tabs.css"/>
+<link href="css/bootstrap-select.css" rel="stylesheet" media="screen" />
+<!-- FONTAWESOME STYLE -->
+<link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'><link rel="stylesheet" href="css/vertical.news.slider.css">
+    <link rel="stylesheet" type="text/css"  href="css/form-ui.css">
+    <!-- InstanceBeginEditable name="head" -->
+    <!-- InstanceEndEditable -->
+</head>
+
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="col-lg-12">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="fiftyads.com" title="fiftyads.com"></a> </div>
+      
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="country">
+            <select class="selectpicker input-block-level">
+              <option data-icon="icon-uk-flag flag-icon">Uk</option>
+              <option data-icon="icon-australia-flag flag-icon">Australia</option>
+            </select>
+          </li>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Login</a>
+            <ul class="dropdown-menu">
+              <div class="navbar-form" role="search">
+                <div class="input-group"> <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                  <input type="text" class="form-control" placeholder="Username">
+                </div>
+                <div class="input-group"> <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                  <input type="password" class="form-control" placeholder="Password">
+                </div>
+                <div class="input-group">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" name="remember" value="1">
+                      Remember me </label>
+                  </div>
+                  <br>
+                </div>
+                <div class="input-group">
+                  <div class="row">
+                    <div class="col-lg-3"> <a id="btn-login" href="#" class="btn btn-login btn-proper">Login </a> </div>
+                    <div class="col-lg-9"> <a id="btn-fblogin" href="#" class="btn btn-login btn-primary">Login via Facebook</a> </div>
+                  </div>
+                </div>
+                <div class="form-bottom"> Don't have an account! <a href="#" onClick="$('#loginbox').hide(); $('#signupbox').show()"> Sign Up Here </a> </div>
+              </div>
+            </ul>
+          </li>
+          <li><a href="signup.html">Register</a> </li>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> My Fifty Ads <span class="badge">14 </span><span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="signup.html">Create Account</a></li>
+             <li><a href="join-ad.html">Saved Ads (0)</a></li>
+              <li><a href="join-ad.html">Saved Searches</a></li>
+              <li><a href="manage-myads.html">Manage my Ads</a></li>
+            </ul>
+          </li>
+          <li class="post-ad"><a href="place-ad.html">Place your Ad <i class="fa fa-chevron-circle-right"></i></a> </li>
+        </ul>
+      </div>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container --> 
+</nav>
+<!-- InstanceBeginEditable name="EditRegion1" -->
+<div class="container">
+
+<div class="inner-search form-cont">
+<div class="spacer-b30 text-center col-md-12">
+                    	<div class="tagline"><span>United Kingdom <i>(1,291,128)</i></span></div><!-- .tagline -->
+                    </div>
+<div class="col-md-3">
+<div class="section" >
+                <label class="field select input-block-level">
+                  <select id="country" name="country" class="selectpicker input-block-level">
+                    <option>Select Category</option>
+                    <option>All</option>
+                    <option>Community</option>
+                    <option>For Sale</option>
+                    <option>Jobs</option>
+                    <option>Property</option>
+                    <option>Services</option>
+                    <option>Pets & Petcare</option>
+                    <option>Motors</option>
+                  </select>
+                </label>
+              </div>
+</div>
+<div class="col-md-3">
+              <div class="section" >
+                <label class="field select">
+                  <select id="country" name="country" class="selectpicker input-block-level" disabled>
+                    <option>Select Sub Category</option>
+                  </select>
+                </label>
+                <!-- end section --> 
+              </div>
+            </div>
+<div class="col-md-6">
+<div class="section">
+                        <div class="smart-widget sm-right smr-80">
+                            <label class="field prepend-icon">
+                                <input type="text" name="sub2" id="sub2" class="gui-input" placeholder="Enter Keywords">
+                                <label for="s" class="field-icon"><i class="fa fa-search"></i></label> <a href="#" class="button"> Search </a>
+                            </label>
+                            
+                        </div><!-- end .smart-widget section --> 
+                    </div>
+
+</div>
+</div>
+<div class="inner-content">
+<div class="row">
+<div class="col-md-3">
+<div class="box">							
+				<div class="icon">
+					<div class="image community"><i class="fa fa-users"></i></div>
+					<div class="info">
+<h3>Community</h3>
+<ul>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Artists & Theatres</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Babysitting</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Classes</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Community Chest</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Creative Writing</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Events, Gigs & Nightlife</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Fitness, Dance & Health</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Groups & Associations</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Lost & Found Stuff</a></li>
+</ul>
+						
+					</div>
+				</div>
+				<div class="space"></div>
+			</div>
+            <div class="box">							
+				<div class="icon">
+					<div class="image services"><i class="fa fa-cog"></i></div>
+					<div class="info">
+<h3>Services</h3>
+<ul>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Building, Home & Removals</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Business Services</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Social, Care & Mobility</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Health & Fitness</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Motor Services</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Equestrian Services</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Property & Shipping</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Tax, Money & Visas</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Telecoms & Computers</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Travel Services & Tours</a></li>
+</ul>
+						
+					</div>
+				</div>
+				<div class="space"></div>
+			</div>
+</div>
+<div class="col-md-3">
+<div class="box">							
+				<div class="icon">
+					<div class="image forsale"><i class="fa fa-gbp"></i></div>
+					<div class="info">
+						<h3>For Sale</h3>
+<ul>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Antiques</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Bikes</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Boats</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Furniture</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Clothes</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Footwear & Accessories</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Hand Made</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Heavy Equipments</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Music & Instruments</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Office Furnitures</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Phones & Telecoms</a></li>
+</ul>			
+					</div>
+				</div>
+				<div class="space"></div>
+			</div>
+            <div class="box">							
+				<div class="icon">
+					<div class="image pets"><i class="fa fa-paw"></i></div>
+					<div class="info">
+<h3>Pets & Petcare</h3>
+<ul>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Dogs & Puppies</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Cats & Kittens</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Rabbits & Bunnies</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Birds</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Petsitters & Dogwalkers</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Equipment & Accessories</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Amphibians</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Missing, Lost & Found</a></li>
+</ul>
+						
+					</div>
+				</div>
+				<div class="space"></div>
+			</div>
+</div>
+<div class="col-md-3">
+<div class="box">							
+				<div class="icon">
+					<div class="image jobs"><i class="fa fa-pencil-square-o"></i></div>
+					<div class="info">
+						<h3>Jobs</h3>
+<ul>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Accounting</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Admin/Office</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Biotech/Science</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Customer Services</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Education</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Food</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>General Labour</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Housing/Real Estate</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Housekeeping & Cleaning</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Homecare & Special Care</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Human Resources</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Legal</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Manufacturing</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Medical</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Non-profit Sector</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Saloon/Spa/Fitness</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Security</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Software</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Web/Info Design</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Part-time Jobs</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Travel & Overseas</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Volunteer & Charity Work</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Restaurant Management</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Sports & Healthclub</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Travel & Overseas</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Secretarial, PAs & Admin</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Social Work</a></li>
+
+
+</ul>
+					</div>
+				</div>
+				<div class="space"></div>
+			</div>
+</div>
+<div class="col-md-3">
+<div class="box">							
+				<div class="icon">
+					<div class="image property"><i class="fa fa-home"></i></div>
+					<div class="info">
+						<h3>Property</h3>
+<ul>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Property For Sale</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Property to Rent</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Property to Share</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Business Premises</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Garages</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Rooms to Rent</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Student Accomodation</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Lands</a></li>
+</ul>
+						
+					</div>
+				</div>
+				<div class="space"></div>
+			</div>
+            <div class="box">							
+				<div class="icon">
+					<div class="image motors"><i class="fa fa-cogs"></i></div>
+					<div class="info">
+<h3>Motors</h3>
+<ul>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Cars</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Commercial Vehicles</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Motorcycles</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Motor Services</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Trailers</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Vans</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Motorhomes</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Spare Parts & Accessories</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Number Plates</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Vans, Trucks & Plant</a></li>
+<li><a href="#"> <i class="fa fa-chevron-right"></i>Wanted</a></li>
+</ul>
+						
+					</div>
+				</div>
+				<div class="space"></div>
+			</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- InstanceEndEditable -->  
+<a id="back-to-top" href="#" class="btn btn-proper btn-lg back-to-top" role="button" title="Scroll to Top" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+<footer>
+
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 about-site"> <img src="img/logo-footer.png" alt="FiftyAds.com">
+          <p>Quisque laoreet neque vel dui tempor hendrerit. Sed lobortis vehicula turpis, quis consectetur nibh pharetra vitae. Maecenas condimentum diam dolor, quis tristique tellus blandit sollicitudin. Nullam sodales tincidunt ante ut faucibus. Suspendisse dapibus lobortis nulla eu congue.</p>
+        </div>
+        <div class="col-lg-2">
+          <h3><i class="fa fa-users"></i> Corporate</h3>
+          <a href="about-us.html"><i class="fa fa-angle-double-right"></i> About Fifty Ads</a> <a href="contact.html"><i class="fa fa-angle-double-right"></i> Contact FiftyAds</a> <a href="busniess-ads.html"><i class="fa fa-angle-double-right"></i> Business Advertising</a> <a href="privacy-policy.html"><i class="fa fa-angle-double-right"></i> Privacy Policy</a> <a href="all-categories.html"><i class="fa fa-angle-double-right"></i> Site Map</a> </div>
+        <div class="col-lg-2 popular-categories">
+          <h3><img src="img/categories_icon.png"> Popular Categories</h3>
+          <a href="properties.html"><i class="fa fa-angle-double-right"></i> Properties <span>(5400)</span></a> <a href="busniess-services.html"><i class="fa fa-angle-double-right"></i> Business Services <span>(1200)</span></a> <a href="motors.html"><i class="fa fa-angle-double-right"></i> Motors <span>(10279)</span></a> <a href="jobs.html"><i class="fa fa-angle-double-right"></i> Jobs <span>(11400)</span></a> <a href="events.html"><i class="fa fa-angle-double-right"></i> Events <span>(7239)</span></a> </div>
+        <div class="col-lg-3 pull-right">
+          <div class="get-deal">
+            <h3><i class="fa fa-envelope"></i> Get deal</h3>
+            <div class="block-content-info">
+              <p>Get exclusive deal offers delivered right to your inbox</p>
+              <div class="input-box">
+                <input title="Sign up for our newsletter" onfocus="if(this.value=='Enter your email...') this.value='';" onblur="if(this.value=='') this.value='Enter your email...';" type="text" name="email" Placeholder="Enter your email..." />
+                <a href="#" class="button"><span><i class="fa fa-arrow-circle-o-right"></i> </span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer-info">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6"> &copy; 2014 FiftyAds.com | All Rights Reserved. </div>
+        <div class="col-lg-6 text-right"> Created and Maintained by <a href="http://crosswindtechnologies.net/" target="_blank">Crosswind Technologies</a> </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- JavaScript --> 
+<script src="js/jquery-1.10.2.js"></script> 
+<script src="js/bootstrap.js"></script> 
+<script src="js/xcharts.js"></script>
+
+<script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="js/responsiveTabs.js"></script>
+    <script>
+    $(document).ready(function() {
+			RESPONSIVEUI.responsiveTabs();
+		})
+    </script>
+<!-- Bootstrap Select --> 
+
+<script src="js/jquery.nicescroll.min.js"></script> 
+<script>
+
+// Show Overflow of Body when Everything has Loaded //
+$(window).load(function(){
+    $("body").css("overflow", "auto");        
+    var nice=$('html').niceScroll({cursorborder:"",cursorcolor:"#f39c12",cursorwidth:"4px"});
+});</script> 
+<script src="js/jquery.newsTicker.js"></script> 
+<script>
+    		
+            var nt_title = $('#nt-title').newsTicker({
+                row_height: 30,
+                max_rows: 1,
+                duration: 3000,
+                pauseOnHover: 0
+            });
+           var nt_title1 = $('#nt-title1').newsTicker({
+                row_height: 30,
+                max_rows: 1,
+                duration: 3000,
+                pauseOnHover: 0
+            });
+        </script> 
+<script type="text/javascript">
+$(document).ready(function(){
+    $(".featured-thumbnail").tooltip();   
+});
+
+		</script> 
+<script>
+	$('#news-carousel').carousel({
+		interval:   4000
+	});
+	$('#myCarousel').carousel({
+		interval:  false
+	});
+	
+		$('.tab-content .carousel').carousel({
+    interval: false
+}) ;
+
+$('#carousel-tab2').carousel({
+    interval: false
+}) 
+	
+</script> 
+<script type="text/javascript" src="js/bootstrap-slider.js"></script> 
+<script>$("#min").slider();
+$("#min").on('slide', function(slideEvt) {
+	$("#minSliderVal").text(slideEvt.value);
+	
+});
+$("#max").slider({});
+$("#max").on('slide', function(slideEvt) {
+	$("#maxSliderVal").text(slideEvt.value);
+});
+</script>
+<script type="text/javascript" src="js/bootstrap-select.js"></script> 
+
+<script type="text/javascript">
+        $(window).on('load', function () {
+
+            $('.selectpicker').selectpicker({
+                'selectedText': 'cat'
+            });
+
+            // $('.selectpicker').selectpicker('hide');
+        });
+    </script> 
+<script type="text/javascript">
+(function ($, window, delay) {
+  // http://jsfiddle.net/AndreasPizsa/NzvKC/
+  var theTimer = 0;
+  var theElement = null;
+    var theLastPosition = {x:0,y:0};
+  $('[data-toggle]')
+    .closest('li')
+    .on('mouseenter', function (inEvent) {
+    if (theElement) theElement.removeClass('open');
+    window.clearTimeout(theTimer);
+    theElement = $(this);
+
+    theTimer = window.setTimeout(function () {
+      theElement.addClass('open');
+    }, delay);
+  })
+    .on('mousemove', function (inEvent) {
+        if(Math.abs(theLastPosition.x - inEvent.ScreenX) > 4 || 
+           Math.abs(theLastPosition.y - inEvent.ScreenY) > 4)
+        {
+            theLastPosition.x = inEvent.ScreenX;
+            theLastPosition.y = inEvent.ScreenY;
+            return;
+        }
+        
+    if (theElement.hasClass('open')) return;
+    window.clearTimeout(theTimer);
+    theTimer = window.setTimeout(function () {
+      theElement.addClass('open');
+    }, delay);
+  })
+    .on('mouseleave', function (inEvent) {
+    window.clearTimeout(theTimer);
+    theElement = $(this);
+    theTimer = window.setTimeout(function () {
+      theElement.removeClass('open');
+    }, delay);
+  });
+})(jQuery, window, 200); // 200 is the delay in milliseconds
+</script> 
+
+<script type="text/javascript" src="js/sm-megamenu.js"></script> 
+<script>$(function(){
+$('a[title]').tooltip();
+});
+$('#states').click(function() {
+    $('.states').slideToggle('fast');
+    return false;
+});
+
+
+function toggleChevron(e) {
+    $(e.target)
+        .prev('.panel-heading')
+        .find("i.indicator")
+        .toggleClass('fa-caret-down fa-caret-right');
+}
+$('#accordion').on('hidden.bs.collapse', toggleChevron);
+$('#accordion').on('shown.bs.collapse', toggleChevron);
+</script>
+<script>
+$(document).ready(function() {
+    var $btnSets = $('#responsive'),
+    $btnLinks = $btnSets.find('a');
+ 
+    $btnLinks.click(function(e) {
+        e.preventDefault();
+        $(this).siblings('a.active').removeClass("active");
+        $(this).addClass("active");
+        var index = $(this).index();
+        $("div.user-menu>div.user-menu-content").removeClass("active");
+        $("div.user-menu>div.user-menu-content").eq(index).addClass("active");
+    });
+});
+
+$( document ).ready(function() {
+    $("[rel='tooltip']").tooltip();    
+ 
+    $('.view').hover(
+        function(){
+            $(this).find('.caption').slideDown(250); //.fadeIn(250)
+        },
+        function(){
+            $(this).find('.caption').slideUp(250); //.fadeOut(205)
+        }
+    ); 
+});
+</script>
+<script type="text/javascript" src="js/jquery.bootstrap.newsbox.js"></script> 
+<script type="text/javascript" src="js/jquery.bxslider.js"></script> 
+<script>
+$('.bxslider').bxSlider({
+  pagerCustom: '#bx-pager'
+});
+</script>
+<script>
+$('.btn-vertical-slider').on('click', function () {
+        
+        if ($(this).attr('data-slide') == 'next') {
+            $('#myCarousel').carousel('next');
+        }
+        if ($(this).attr('data-slide') == 'prev') {
+            $('#myCarousel').carousel('prev')
+        }
+
+    });
+ $(function () {
+        $(".popular-search-items").bootstrapNews({
+            newsPerPage:5,
+            autoplay: false,
+			pauseOnHover:true,
+            direction: 'up',
+            newsTickerInterval: 4000,
+            onToDo: function () {
+                //console.log(this);
+            }
+        });
+		
+		
+    });
+	</script>
+    
+  
+</body>
+<!-- InstanceEnd --></html>

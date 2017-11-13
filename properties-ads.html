@@ -1,0 +1,1120 @@
+e map<!DOCTYPE html>
+<html lang="en"><!-- InstanceBegin template="/Templates/inner.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Classifieds</title>
+<!-- InstanceEndEditable -->
+<!-- Bootstrap core CSS -->
+
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="css/megamenu.css" />
+<link rel="stylesheet" href="css/jquery.bxslider.css" />
+<link rel="stylesheet" href="css/responsive-tabs.css"/>
+<link href="css/bootstrap-select.css" rel="stylesheet" media="screen" />
+<!-- FONTAWESOME STYLE -->
+<link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'><link rel="stylesheet" href="css/vertical.news.slider.css">
+    <link rel="stylesheet" type="text/css"  href="css/form-ui.css">
+    <!-- InstanceBeginEditable name="head" -->
+    <!-- InstanceEndEditable -->
+</head>
+
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="col-lg-12">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="fiftyads.com" title="fiftyads.com"></a> </div>
+      
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="country">
+            <select class="selectpicker input-block-level">
+              <option data-icon="icon-uk-flag flag-icon">Uk</option>
+              <option data-icon="icon-australia-flag flag-icon">Australia</option>
+            </select>
+          </li>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Login</a>
+            <ul class="dropdown-menu">
+              <div class="navbar-form" role="search">
+                <div class="input-group"> <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                  <input type="text" class="form-control" placeholder="Username">
+                </div>
+                <div class="input-group"> <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                  <input type="password" class="form-control" placeholder="Password">
+                </div>
+                <div class="input-group">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" name="remember" value="1">
+                      Remember me </label>
+                  </div>
+                  <br>
+                </div>
+                <div class="input-group">
+                  <div class="row">
+                    <div class="col-lg-3"> <a id="btn-login" href="#" class="btn btn-login btn-proper">Login </a> </div>
+                    <div class="col-lg-9"> <a id="btn-fblogin" href="#" class="btn btn-login btn-primary">Login via Facebook</a> </div>
+                  </div>
+                </div>
+                <div class="form-bottom"> Don't have an account! <a href="#" onClick="$('#loginbox').hide(); $('#signupbox').show()"> Sign Up Here </a> </div>
+              </div>
+            </ul>
+          </li>
+          <li><a href="signup.html">Register</a> </li>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> My Fifty Ads <span class="badge">14 </span><span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="signup.html">Create Account</a></li>
+             <li><a href="join-ad.html">Saved Ads (0)</a></li>
+              <li><a href="join-ad.html">Saved Searches</a></li>
+              <li><a href="manage-myads.html">Manage my Ads</a></li>
+            </ul>
+          </li>
+          <li class="post-ad"><a href="place-ad.html">Place your Ad <i class="fa fa-chevron-circle-right"></i></a> </li>
+        </ul>
+      </div>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container --> 
+</nav>
+<!-- InstanceBeginEditable name="EditRegion1" -->
+<div class="container">
+
+<div class="inner-search form-cont">
+<div class="spacer-b30 text-center col-md-12">
+                    	<div class="tagline"><span>United Kingdom <i>(1,291,128)</i></span></div><!-- .tagline -->
+                    </div>
+<div class="col-md-3">
+<div class="section" >
+                <label class="field select input-block-level">
+                  <select id="country" name="country" class="selectpicker input-block-level">
+                    <option>Select Category</option>
+                    <option>All</option>
+                    <option>Community</option>
+                    <option>For Sale</option>
+                    <option>Jobs</option>
+                    <option>Property</option>
+                    <option>Services</option>
+                    <option>Pets & Petcare</option>
+                    <option>Motors</option>
+                  </select>
+                </label>
+              </div>
+</div>
+<div class="col-md-3">
+              <div class="section" >
+                <label class="field select">
+                  <select id="country" name="country" class="selectpicker input-block-level" disabled>
+                    <option>Select Sub Category</option>
+                  </select>
+                </label>
+                <!-- end section --> 
+              </div>
+            </div>
+<div class="col-md-6">
+<div class="section">
+                        <div class="smart-widget sm-right smr-80">
+                            <label class="field prepend-icon">
+                                <input type="text" name="sub2" id="sub2" class="gui-input" placeholder="Enter Keywords">
+                                <label for="s" class="field-icon"><i class="fa fa-search"></i></label> <a href="#" class="button"> Search </a>
+                            </label>
+                            
+                        </div><!-- end .smart-widget section --> 
+                    </div>
+
+</div>
+</div>
+<div class="inner-content">
+<div class="row">
+<div class="col-md-3">
+<div id="sidebar">
+<div class="refine-search">
+<h2>Refine your Search</h2>
+<div class="select-area">
+        <h3>Location</h3>
+        <a href="#" id="states" class="country-nm">United Kingdom <i class="glyphicon fa fa-plus-circle pull-right"></i></a>
+<div class="states">
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#england">
+         England
+        </a><i class="indicator glyphicon fa fa-caret-right pull-right"></i>
+      </h4>
+    </div>
+    <div id="england" class="panel-collapse collapse">
+      <div class="panel-body">
+      <div class="row">
+		<div class="col-lg-6">
+       <ul>
+       <li><a href="#">Bedfordshire</a></li>
+       <li><a href="#">Berkshire</a></li>
+       <li><a href="#">Bristol</a></li>
+       <li><a href="#">Buckinghamshire</a></li>
+       <li><a href="#">Cambridgeshire</a></li>
+       <li><a href="#">Cheshire</a></li>
+       <li><a href="#">Cornwall</a></li>
+       <li><a href="#">County Durham</a></li>
+       <li><a href="#">Cumbria</a></li>
+       <li><a href="#">Derbyshire</a></li>
+       <li><a href="#">Devon</a></li>
+       <li><a href="#">Dorset</a></li>
+       <li><a href="#">East Sussex</a></li>
+       <li><a href="#">East Yorkshire</a></li>
+       <li><a href="#">Essex</a></li>
+        <li><a href="#">Gloucestershire</a></li>
+       <li><a href="#">Hampshire</a></li>
+       <li><a href="#">Herefordshire</a></li>
+       <li><a href="#">Isle of Wight</a></li>
+       <li><a href="#">Kent</a></li>
+       <li><a href="#">Lancashire</a></li>
+       <li><a href="#">Leicestershire</a></li>
+       </ul>
+       </div>
+       <div class="col-lg-6">
+       <ul>
+        <li><a href="#">Lincolnshire</a></li>
+       <li><a href="#">London</a></li>
+       <li><a href="#">Manchester</a></li>
+       <li><a href="#">Merseyside</a></li>
+       <li><a href="#">Norfolk</a></li>
+       <li><a href="#">North Yorkshire</a></li>
+       <li><a href="#">Northamptonshire</a></li>
+       <li><a href="#">Northumberland</a></li>
+       <li><a href="#">Nottinghamshire</a></li>
+       <li><a href="#">Oxfordshire</a></li>
+       <li><a href="#">Rutland</a></li>
+       <li><a href="#">Shropshire</a></li>
+       <li><a href="#">South Yorkshire</a></li>
+       <li><a href="#">Staffordshire</a></li>
+       <li><a href="#">Suffolk</a></li>
+       <li><a href="#">Surrey</a></li>
+       <li><a href="#">Tyne and Wear</a></li>
+       <li><a href="#">Warwickshire</a></li>
+       <li><a href="#">West Midlands</a></li>
+       <li><a href="#">West Sussex</a></li>
+       <li><a href="#">West Yorkshire</a></li>
+       <li><a href="#">Wiltshire</a></li>
+       </ul>
+       </div>
+       </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#northern-ireland">
+           Northern Ireland 
+        </a><i class="indicator glyphicon fa fa-caret-right pull-right"></i>
+      </h4>
+    </div>
+    <div id="northern-ireland" class="panel-collapse collapse">
+      <div class="panel-body">
+      <div class="row">
+      <div class="col-lg-6">
+        <ul>
+      <li><a href="#">Belfast</a></li>
+       <li><a href="#">County Antrim</a></li>
+       <li><a href="#">County Armagh</a></li>
+       <li><a href="#">County Down</a></li>
+      </ul>
+      </div>
+       <div class="col-lg-6">
+      <ul>
+      <li><a href="#">County Fermanagh</a></li>
+       <li><a href="#">County Londonderry</a></li>
+       <li><a href="#">County T</a></li>
+       </ul>
+       </div></div>
+       
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#scotland">
+         Scotland
+        </a><i class="indicator glyphicon fa fa-caret-right pull-right"></i>
+      </h4>
+    </div>
+    <div id="scotland" class="panel-collapse collapse">
+      <div class="panel-body">
+      <div class="row">
+      <div class="col-lg-6">
+      <ul>
+      <li><a href="#">Aberdeen</a></li>
+       <li><a href="#">Aberdeenshire</a></li>
+       <li><a href="#">Angus</a></li>
+       <li><a href="#">Argyll and Bute</a></li>
+       <li><a href="#">Clackmannanshire</a></li>
+       <li><a href="#">Dumfries and Galloway</a></li>
+       <li><a href="#">Dundee</a></li>
+       <li><a href="#">East Ayrshire</a></li>
+       <li><a href="#">East Dunbartonshire</a></li>
+       <li><a href="#">East Lothian</a></li>
+       <li><a href="#">East Renfrewshire</a></li>
+       <li><a href="#">Edinburgh</a></li>
+       <li><a href="#">Falkirk</a></li>
+       <li><a href="#">Fife</a></li>
+       <li><a href="#">Glasgow</a></li>
+       <li><a href="#">Highland</a></li>
+      </ul>
+      </div>
+      <div class="col-lg-6">
+      <ul>
+      <li><a href="#">Inverclyde</a></li>
+       <li><a href="#">Midlothian</a></li>
+       <li><a href="#">Moray</a></li>
+       <li><a href="#">Na H-Eileanan an Iar</a></li>
+       <li><a href="#">North Ayrshire</a></li>
+       <li><a href="#">North Lanarkshire</a></li>
+       <li><a href="#">Orkney Islands</a></li>
+       <li><a href="#">Perth and Kinross</a></li>
+       <li><a href="#">Renfrewshire</a></li>
+       <li><a href="#">Scottish Borders</a></li>
+       <li><a href="#">Shetland Islands</a></li>
+       <li><a href="#">South Ayrshire</a></li>
+       <li><a href="#">South Lanarkshire</a></li>
+       <li><a href="#">Stirling</a></li>
+       <li><a href="#">West Dunbartonshire</a></li>
+       <li><a href="#">West Lothian</a></li>
+       </ul>
+       </div>
+       </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#wales">
+         Wales
+        </a><i class="indicator glyphicon fa fa-caret-right pull-right"></i>
+      </h4>
+    </div>
+    <div id="wales" class="panel-collapse collapse">
+      <div class="panel-body">
+<div class="row">
+      <div class="col-lg-6">
+      <ul>
+       <li><a href="#">Blaenau Gwent</a></li>
+       <li><a href="#">Bridgend</a></li>
+       <li><a href="#">Caerphilly</a></li>
+       <li><a href="#">Cardiff</a></li>
+       <li><a href="#">Carmarthenshire</a></li>
+       <li><a href="#">Ceredigion</a></li>
+       <li><a href="#">Conwy</a></li>
+       <li><a href="#">Denbighshire</a></li>
+       <li><a href="#">Flintshire</a></li>
+       <li><a href="#">Gwynedd</a></li>
+       <li><a href="#">Isle of Anglesey</a></li>
+       </ul>
+      </div>
+      <div class="col-lg-6">
+      <ul>
+       <li><a href="#">Merthyr Tydfil</a></li>
+       <li><a href="#">Monmouthshire</a></li>
+       <li><a href="#">Neath Port Talbot</a></li>
+       <li><a href="#">Newport</a></li>
+       <li><a href="#">Pembrokeshire</a></li>
+       <li><a href="#">Powys</a></li>
+       <li><a href="#">Rhondda Cynon Taf</a></li>
+       <li><a href="#">Swansea</a></li>
+       <li><a href="#">Torfaen</a></li>
+       <li><a href="#">Vale of Glamorgan</a></li>
+       <li><a href="#">Wrexham</a></li>
+       
+       </ul>
+      </div>
+       </div>
+      
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+      </div>
+    <div class="refine-categories">
+    <h3>Categories</h3>
+    <div id="MainMenu">
+  <div class="list-group panel">
+    <a href="#community" class="list-group-item list-group-item-success strong" data-toggle="collapse" data-parent="#MainMenu"><i class="fa fa-users"></i> Community </a>
+    <div class="collapse sub-categories" id="community">
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Artists &amp; Theatres</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Babysitting</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Classes</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Community Chest</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Creative Writing</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Events, Gigs & Nightlife</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Fitness, Dance & Health</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Groups & Associations</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Lost & Found Stuff</a>
+    </div>
+   <a href="#forsale" class="list-group-item list-group-item-success strong" data-toggle="collapse" data-parent="#MainMenu"><i class="fa fa-gbp"></i> For Sale </a>
+    <div class="collapse sub-categories" id="forsale">
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Baby & Kids Stuff</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Boats</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Furniture</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Clothes</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Footwear & Accessories</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Hand Made</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Heavy Equipments</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Music & Instruments</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Office Furnitures</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Phones & Telecoms</a>
+    </div>
+    <a href="#jobs" class="list-group-item list-group-item-success strong" data-toggle="collapse" data-parent="#MainMenu"><i class="fa fa-pencil-square-o"></i> Jobs </a>
+    <div class="collapse sub-categories" id="jobs">
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Accounting</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Admin/Office</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Biotech/Science</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Customer Services</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Education</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Food</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> General Labour</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Housing/Real Estate</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Housekeeping & Cleaning</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Homecare & Special Care</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Human Resources</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Legal</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Manufacturing</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Medical</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Non-profit Sector</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Saloon/Spa/Fitness</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Security</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Software</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Web/Info Design</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Part-time Jobs</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Travel & Overseas</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Volunteer & Charity Work</a>
+    <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Restaurant Management</a>
+    <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Sports & Healthclub</a>
+    <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Travel & Overseas</a>
+    <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Secretarial, PAs & Admin</a>
+    <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Social Work</a>
+    </div>
+     <a href="#property" class="list-group-item list-group-item-success strong" data-toggle="collapse" data-parent="#MainMenu"><i class="fa fa-home"></i> Property </a>
+     <div class="collapse sub-categories" id="property">
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Property For Sale</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Property to Rent</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Property to Share</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Business Premises</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Garages</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Rooms to Rent</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Student Accomodation</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Lands</a>
+    </div>
+     <a href="#services" class="list-group-item list-group-item-success strong" data-toggle="collapse" data-parent="#MainMenu"><i class="fa fa-cog"></i> Services</a>
+     <div class="collapse sub-categories" id="services">
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Building, Home & Removals</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Business Services</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Social, Care & Mobility</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Health & Fitness</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Motor Services</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Equestrian Services</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Property & Shipping</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Tax, Money & Visas</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Telecoms & Computers</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Travel Services & Tours</a>
+    </div>
+     <a href="#pets" class="list-group-item list-group-item-success strong" data-toggle="collapse" data-parent="#MainMenu"><i class="fa fa-paw"></i> Pets & Petcare</a>
+     <div class="collapse sub-categories" id="pets">
+     <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Dogs & Puppies</a>
+     <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Cats & Kittens</a>
+     <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Rabbits & Bunnies</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Birds</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Petsitters & Dogwalkers</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Equipment & Accessories</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Amphibians</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Missing, Lost & Found</a>
+      
+     </div>
+     <a href="#motors" class="list-group-item list-group-item-success strong" data-toggle="collapse" data-parent="#MainMenu"><i class="fa fa-cogs"></i> Motors</a>
+     <div class="collapse sub-categories" id="motors">
+     <div class="list-group-item form-cont">
+     <div class="section">
+                <label class="field select input-block-level">
+                  <select id="country" name="country" class="selectpicker input-block-level" title="Make" multiple>
+                   <option value="">Any</option>
+  <option value="alfa_romeo">Alfa Romeo</option>
+  <option value="aixam">Aixam</option>
+  <option value="aston_martin">Aston Martin</option>
+  <option value="audi">Audi</option>
+  <option value="bentley">Bentley</option>
+  <option value="bmw">BMW</option>
+  <option value="cadillac">Cadillac</option>
+  <option value="chevrolet">Chevrolet</option>
+  <option value="chrysler">Chrysler</option>
+  <option value="citroen">Citroen</option>
+  <option value="dacia">Dacia</option>
+  <option value="daewoo">Daewoo</option>
+  <option value="daihatsu">Daihatsu</option>
+  <option value="daimler">Daimler</option>
+  <option value="dodge">Dodge</option>
+  <option value="ferrari">Ferrari</option>
+  <option value="fiat">Fiat</option>
+  <option value="ford">Ford</option>
+  <option value="honda">Honda</option>
+  <option value="hummer">Hummer</option>
+  <option value="hyundai">Hyundai</option>
+  <option value="isuzu">Isuzu</option>
+  <option value="jaguar">Jaguar</option>
+  <option value="jeep">Jeep</option>
+  <option value="kia">Kia</option>
+  <option value="lada">Lada</option>
+  <option value="lamborghini">Lamborghini</option>
+  <option value="lancia">Lancia</option>
+  <option value="land_rover">Land Rover</option>
+  <option value="lexus">Lexus</option>
+  <option value="lotus">Lotus</option>
+  <option value="mazda">Mazda</option>
+  <option value="maserati">Maserati</option>
+  <option value="mercedes_benz">Mercedes Benz</option>
+  <option value="mg">MG</option>
+  <option value="microcar">Microcar</option>
+  <option value="mini">Mini</option>
+  <option value="mitsubishi">Mitsubishi</option>
+  <option value="nissan">Nissan</option>
+  <option value="opel">Opel</option>
+  <option value="perodua">Perodua</option>
+  <option value="peugeot">Peugeot</option>
+  <option value="porsche">Porsche</option>
+  <option value="proton">Proton</option>
+  <option value="reliant">Reliant</option>
+  <option value="renault">Renault</option>
+  <option value="rolls_royce">Rolls Royce</option>
+  <option value="rover">Rover</option>
+  <option value="saab">Saab</option>
+  <option value="seat">Seat</option>
+  <option value="skoda">Skoda</option>
+  <option value="smart">Smart</option>
+  <option value="ssangyong">Ssangyong</option>
+  <option value="subaru">Subaru</option>
+  <option value="suzuki">Suzuki</option>
+  <option value="tata">Tata</option>
+  <option value="toyota">Toyota</option>
+  <option value="vauxhall">Vauxhall</option>
+  <option value="volkswagen">Volkswagen</option>
+  <option value="volvo">Volvo</option>
+  <option value="other_manufacturer">Other</option>
+                  </select>
+                  
+                </label>
+              </div>
+              <div class="section">
+                <label class="field select input-block-level">
+                  <select id="country" name="country" class="selectpicker input-block-level" title="Model" disabled>
+                  </select>
+                  </label>
+                  </div>
+                  <div class="section" >
+                <label class="field select input-block-level">
+                  <select id="country" name="country" class="selectpicker input-block-level" title="Year" disabled>
+                  </select>
+                  </label>
+                  </div>
+                  <div class="section">
+                <label class="field select input-block-level">
+                  <select id="country" name="country" class="selectpicker input-block-level" title="Mileage" disabled>
+                  </select>
+                  </label>
+                  </div>
+                  <div class="section">
+                <label class="field select input-block-level">
+                  <select id="country" name="country" class="selectpicker input-block-level" title="Seller Type" disabled>
+                  </select>
+                  </label>
+                  </div>
+                  <div class="section">
+                <label class="field select input-block-level">
+                  <select id="country" name="country" class="selectpicker input-block-level" title="Body Type" disabled>
+                  </select>
+                  </label>
+                  </div>
+                  <div class="section">
+                <label class="field select input-block-level">
+                  <select id="country" name="country" class="selectpicker input-block-level" title="Fuel Type" disabled>
+                  </select>
+                  </label>
+                  </div>
+                  <div class="section">
+                <label class="field select input-block-level">
+                  <select id="country" name="country" class="selectpicker input-block-level" title="Transmission" disabled>
+                  </select>
+                  </label>
+                  </div>
+                  <div class="section">
+                <label class="field select input-block-level">
+                  <select id="country" name="country" class="selectpicker input-block-level" title="Engine Size" disabled>
+                  </select><br>
+                  </label>
+                  
+                  </div>
+     </div>
+     <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Cars</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Commercial Vehicles</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Motorcycles</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Motor Services</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Trailers</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Vans</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Motorhomes</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Spare Parts & Accessories</a>
+       <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Number Plates</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Vans, Trucks & Plant</a>
+      <a href="#" class="list-group-item"><i class="fa fa-angle-right"></i> Wanted</a>
+     </div>
+  </div>
+</div>
+    </div>  
+    <div class="refine-price">
+    <h3>Price</h3>
+   <div class="slider-value"><input id="min" type="text" data-slider-min="-5" data-slider-max="10000" data-slider-step="1" data-slider-value="3000">
+<span id="minCurrentSliderValLabel"><strong>Min Value:</strong> &#163;<span id="minSliderVal">3000</span></span></div>
+<div class="slider-value">
+<input id="max" data-slider-id='maxSlider' type="text" data-slider-min="30000" data-slider-max="1000000" data-slider-step="1" data-slider-value="190000"/><span id="maxCurrentSliderValLabel"><strong>Max Value:</strong> &#163;<span id="maxSliderVal">190000</span></span></div>
+    </div>
+    <div class="refine-posted">
+    <h3>Posted Since</h3>
+    <div class="form-cont">
+    <div class="checkbox-option">
+                          <label class="field option block">
+                            <input type="checkbox" name="today"><span class="checkbox"></span>  Today
+                         
+                        </label>
+                         </div>
+                         <div class="checkbox-option">
+                          <label class="field option block">
+                            <input type="checkbox" name="yesterday"><span class="checkbox"></span> Yesterday
+                         
+                        </label>
+                         </div>
+                         <div class="checkbox-option">
+                          <label class="field option block">
+                            <input type="checkbox" name="thisweek"><span class="checkbox"></span> This Week
+                         
+                        </label>
+                         </div>
+                         <div class="checkbox-option">
+                          <label class="field option block">
+                            <input type="checkbox" name="2weeks"><span class="checkbox"></span> 2 weeks Older
+                         
+                        </label>
+                         </div>
+                         <div class="checkbox-option">
+                          <label class="field option block">
+                            <input type="checkbox" name="4weeks"><span class="checkbox"></span> 4 weeks Older
+                         
+                        </label>
+                         </div>
+                         <div class="checkbox-option">
+                          <label class="field option block">
+                            <input type="checkbox" name="all"><span class="checkbox"></span> All
+                         
+                        </label>
+                         </div>
+                         
+                         
+                         </div>
+    </div>
+    <div class="refine-searchonly">
+    <h3>Search Only</h3>
+    <div class="form-cont">
+    <div class="checkbox-option">
+                          <label class="field option block">
+                            <input type="checkbox" name="urgent-ads"><span class="checkbox"></span>  Urgent Ads
+                         
+                        </label>
+                         </div>
+                         <div class="checkbox-option">
+                          <label class="field option block">
+                            <input type="checkbox" name="highlighted-ads"><span class="checkbox"></span> Highlighted Ads
+                         
+                        </label>
+                         </div>
+                         <div class="checkbox-option">
+                          <label class="field option block">
+                            <input type="checkbox" name="featured-ads"><span class="checkbox"></span> Featured Ads
+                         
+                        </label>
+                         </div>
+                         <div class="checkbox-option">
+                          <label class="field option block">
+                            <input type="checkbox" name="featured-ads"><span class="checkbox"></span> Ads with Photos
+                         
+                        </label>
+                         </div>
+
+                         </div>
+    </div>
+</div>
+<div class="social">
+<div class="list-group social-views">
+
+                <a href="http://www.crosswindtechnologies.net" class="list-group-item visitor">
+                    <h3 class="pull-right">
+                        <i class="fa fa-eye"></i>
+                    </h3>
+                    <h4 class="list-group-item-heading count">
+                        1000</h4>
+                    <p class="list-group-item-text">
+                        Profile Views</p>
+                </a><a href="http://www.crosswindtechnologies.net" class="list-group-item facebook-like">
+                    <h3 class="pull-right">
+                        <i class="fa fa-facebook-square"></i>
+                    </h3>
+                    <h4 class="list-group-item-heading count">
+                        1000</h4>
+                    <p class="list-group-item-text">
+                        Facebook Likes</p>
+                </a><a href="http://www.crosswindtechnologies.net" class="list-group-item google-plus">
+                    <h3 class="pull-right">
+                        <i class="fa fa-google-plus-square"></i>
+                    </h3>
+                    <h4 class="list-group-item-heading count">
+                        1000</h4>
+                    <p class="list-group-item-text">
+                        Google+</p>
+                </a><a href="http://www.crosswindtechnologies.net" class="list-group-item twitter">
+                    <h3 class="pull-right">
+                        <i class="fa fa-twitter-square"></i>
+                    </h3>
+                    <h4 class="list-group-item-heading count">
+                        1000</h4>
+                    <p class="list-group-item-text">
+                        Twitter Followers</p>
+                </a>
+            </div>
+            </div>
+            <div class="g-ads">
+            <img src="img/g-ad9.jpg" alt="">
+           
+            </div>
+            </div>
+</div>
+<div class="col-md-6">
+
+		<h2 class="lead"><strong class="text-success">364,530</strong>Ads were found in <strong class="text-danger">United Kingdom</strong></h2>	
+<div class="sort">							
+<select class="selectpicker" title="Sort By" >
+<option>Sort By</option>
+          <option>Most Relevant Ads</option>
+          <option>Latest Ads</option>
+          <option>Price - Low to High</option>
+          <option>Price - High to Low</option>
+       
+        </select> <span class="pull-right save-search">Save Search<a href="#" title="Save Search"><i class="fa fa-floppy-o"></i></a></span>
+</div>
+    <section class="col-xs-12 col-sm-6 col-md-12">
+		<article class="search-result row">
+        
+			<div class="col-xs-12 col-sm-12 col-md-4">
+				<a href="#" title="CHEAP! 1 BEDROOM FLAT IN HAMMERSMITH/BARONS COURT" class="thumbnail"><img src="img/search-ad-1.jpg" alt="A Spacious 4 Double Bedroom with Private Garden" /></a><ul class="meta-search">
+					<li><i class="glyphicon glyphicon-calendar"></i> <span>20/10/2014</span></li>
+					<li><i class="glyphicon glyphicon-time"></i> <span>Just Now</span></li>
+					<li><i class="glyphicon glyphicon-tags"></i> <span>Property</span></li>
+				</ul>
+			</div>
+			
+			<div class="col-xs-12 col-sm-12 col-md-8 excerpet">
+				<h3><a href="#" title="">***CHEAP! 1 BEDROOM FLAT IN HAMMERSMITH/BARONS COURT***</a> <span class="blink_me blink-sale">New</span></h3>
+                <p class="location">Hammersmith, London <span class="price">&#163;260pw</span></p>
+				<p>Cheap 1 Bedroom Top Floor Flat *Laminate Flooring *Fully Furnished *Large Double Bedroom *Separate Living Room...</p>		
+               <p><a href="#" title="Photos - 9" class="photos"><i class="fa fa-camera"></i> 4</a> <span class="date-avl">Date Available: 01/09/14 <a href="#" title="Save Ad" class="save"><i class="fa fa-star-o"></i></a></span></p>
+			</div>
+            
+		</article>
+
+        <article class="search-result row">
+			<div class="col-xs-12 col-sm-12 col-md-4">
+				<a href="#" title="2 BEDROOM FLAT,CHELSEA EMBANKMENT" class="thumbnail"><img src="img/property-ads2.jpg" alt="2 BEDROOM FLAT,CHELSEA EMBANKMENT" /></a><ul class="meta-search">
+					<li><i class="glyphicon glyphicon-calendar"></i> <span>01/11/2014</span></li>
+					<li><i class="glyphicon glyphicon-time"></i> <span>Just Now</span></li>
+					<li><i class="glyphicon glyphicon-tags"></i> <span>Property</span></li>
+				</ul>
+			</div>
+			
+			<div class="col-xs-12 col-sm-12 col-md-8 excerpet">
+				<h3><a href="#" title="">***2 BEDROOM FLAT,CHELSEA EMBANKMENT***</a></h3>
+                <p class="location">Chelsea, London<span class="price">&#163;495</span></p>
+				<p>Newly Refurbished to and Exxeptional Standars *Dancer Street Off Chelsea Embankment *2 Double Bedrooms *Newly Fitted Solid Wood....</p>		
+               <p><a href="#" title="Photos - 6" class="photos"><i class="fa fa-camera"></i> 6</a><span class="date-avl">Date Available: 01/09/14 <a href="#" title="Remove Ad" class="save"><i class="fa fa-star"></i></a></span></p>
+			</div>
+            <div class="featured-ribbon">Featured</div>
+		</article>
+        <article class="search-result row">
+			<div class="col-xs-12 col-sm-12 col-md-4">
+				<a href="#" title="2 BEDROOM 2 BATHROOM WENSINGTON/FULHAM BROADWAY" class="thumbnail"><img src="img/property-ads3.jpg" alt="2 BEDROOM 2 BATHROOM WENSINGTON/FULHAM BROADWAY*" /></a><ul class="meta-search">
+					<li><i class="glyphicon glyphicon-calendar"></i> <span>12/12/2014</span></li>
+					<li><i class="glyphicon glyphicon-time"></i> <span>Just Now</span></li>
+					<li><i class="glyphicon glyphicon-tags"></i> <span>Property</span></li>
+				</ul>
+			</div>
+			
+			<div class="col-xs-12 col-sm-12 col-md-8 excerpet">
+				<h3><a href="listing-detail.html" title="">***2 BEDROOM 2 BATHROOM WENSINGTON/FULHAM BROADWAY***</a></h3>
+                <p class="location">Kensington, London<span class="price">&#163;4,495</span></p>		
+                <p>2003 Volvo S80 2.4 Auto SE D5 4 Door Saloon Full Leather Seats, 12 Months MOT, 3 Months Tax, Service History, Air conditioning...</p>
+               <p><a href="#" title="Photos - 6" class="photos"><i class="fa fa-camera"></i> 6</a><span class="date-avl">Date Available: 01/09/14 <a href="#" title="Remove Ad" class="save"><i class="fa fa-star"></i></a></span></p>
+			</div>
+		</article>
+        <article class="search-result row">
+			<div class="col-xs-12 col-sm-12 col-md-4">
+				<a href="#" title="3 BEDROOMS, 2 BATHROOMS, GARDEN HOUSE IN FULHAM/PARSONS GREEN" class="thumbnail"><img src="img/property-ads4.jpg" alt="3 BEDROOMS, 2 BATHROOMS, GARDEN HOUSE IN FULHAM/PARSONS GREEN" /></a><ul class="meta-search">
+					<li><i class="glyphicon glyphicon-calendar"></i> <span>01/11/2014</span></li>
+					<li><i class="glyphicon glyphicon-time"></i> <span>Just Now</span></li>
+					<li><i class="glyphicon glyphicon-tags"></i> <span>Property</span></li>
+				</ul>
+			</div>
+			
+			<div class="col-xs-12 col-sm-12 col-md-8 excerpet">
+				<h3><a href="#" title="">***3 BEDROOMS, 2 BATHROOMS, GARDEN HOUSE IN FULHAM/PARSONS GREEN***</a></h3>
+                <p class="location">Fulham, London<span class="price">&#163;595</span></p>		
+                <p>3 Double Bedrooms *2 Bathrooms *Garden  *Fully Fitted Kitched *Fully fitted Kitchen *Fully Furnished * Call Today On 07804921217....</p>
+               <p><a href="#" title="Photos - 8" class="photos"><i class="fa fa-camera"></i> 8</a><span class="date-avl">Match Date: 08/09/14<a href="#" title="Save Ad" class="save"><i class="fa fa-star-o"></i></a></span></p>
+			</div>
+		</article>
+        
+ 
+
+        
+        <article class="search-result row">
+			<div class="col-xs-12 col-sm-12 col-md-4">
+				<a href="#" title="SHORT LET: Cosy double studio on Penywer Road " class="thumbnail"><img src="img/property-ads5.jpg" alt="2003/53 Volvo S80 2.4 D5 Auto SE 4 Door Saloon" /></a><ul class="meta-search">
+					<li><i class="glyphicon glyphicon-calendar"></i> <span>01/11/2014</span></li>
+					<li><i class="glyphicon glyphicon-time"></i> <span>Just Now</span></li>
+					<li><i class="glyphicon glyphicon-tags"></i> <span>Property</span></li>
+				</ul>
+			</div>
+			
+			<div class="col-xs-12 col-sm-12 col-md-8 excerpet">
+				<h3><a href="#" title="">***SHORT LET: Cosy double studio on Penywer Road***</a></h3>
+                <p class="location">Earls Court, London<span class="price">&#163;400</span></p>		
+                <p>Open plan fitted kitchen with oven, cooker, fridge/freezer, microwave *fully furnished with double bed or sofa bed, wardrobe, chairs, coffee table.... </p>
+                 <p><a href="#" title="Photos - 10" class="photos"><i class="fa fa-camera"></i>10</a><span class="date-avl">Match Date: 07/010/14<a href="#" title="Save Ad" class="save"><i class="fa fa-star-o"></i></a></span></p>
+			</div>
+		</article>
+<article class="search-result row">
+        
+			<div class="col-xs-12 col-sm-12 col-md-4">
+				<a href="#" title="OFFICE Space in (EALING - W5) EALING Offices !!" class="thumbnail"><img src="img/search-ad-1.jpg" alt="OFFICE Space in (EALING - W5) EALING Offices !!" /></a><ul class="meta-search">
+					<li><i class="glyphicon glyphicon-calendar"></i> <span>22/12/2014</span></li>
+					<li><i class="glyphicon glyphicon-time"></i> <span>Just Now</span></li>
+					<li><i class="glyphicon glyphicon-tags"></i> <span>Property</span></li>
+				</ul>
+			</div>
+			
+			<div class="col-xs-12 col-sm-12 col-md-8 excerpet">
+				<h3><a href="#" title="">***OFFICE Space in (EALING - W5) EALING Offices !! ***</a> <span class="blink_me blink-sale">New</span></h3>
+                <p class="location">Ealing, London <span class="price">&#163;295pw</span></p>
+				<p>24 Hour Access *Air Conditioning  *Boardroom  *Business Lounge *Call Answering *CAT 5/5e/6 Cabling *City/Town centre  *Conference Space....</p>		
+               <p><a href="#" title="Photos - 9" class="photos"><i class="fa fa-camera"></i> 9</a> <span class="date-avl">Date Available: 18/11/14<a href="#" title="Remove Ad" class="save"><i class="fa fa-star"></i></a></span></p>
+			</div>
+            
+		</article>
+					<div class="pull-right">
+                    <ul class="pagination">
+  <li><a href="#">&laquo;</a></li>
+  <li><a href="#">1</a></li>
+  <li><a href="#">2</a></li>
+  <li><a href="#">3</a></li>
+  <li><a href="#">4</a></li>
+  <li><a href="#">5</a></li>
+  <li><a href="#">&raquo;</a></li>
+</ul>
+                    </div>
+
+	</section>
+</div>
+<div class="col-md-3">
+<div class="g-ads">
+<img src="img/g-ad8.jpg" alt="Ad" title="Ad">
+</div>
+<div class="related-listings">
+<div class="panel panel-default">
+<div class="panel-body">
+<div class="row">
+<div class="col-xs-12 properties">
+
+
+<h2>How are Properties Ads Priced?</h2>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.<br><br>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+</div>
+</div>
+</div>
+</div>                
+</div>
+<div class="competitions">
+
+
+
+
+
+</div>
+</div>
+</div>
+</div>
+<!-- InstanceEndEditable -->  
+<a id="back-to-top" href="#" class="btn btn-proper btn-lg back-to-top" role="button" title="Scroll to Top" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>
+<footer>
+
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 about-site"> <img src="img/logo-footer.png" alt="FiftyAds.com">
+          <p>Quisque laoreet neque vel dui tempor hendrerit. Sed lobortis vehicula turpis, quis consectetur nibh pharetra vitae. Maecenas condimentum diam dolor, quis tristique tellus blandit sollicitudin. Nullam sodales tincidunt ante ut faucibus. Suspendisse dapibus lobortis nulla eu congue.</p>
+        </div>
+        <div class="col-lg-2">
+          <h3><i class="fa fa-users"></i> Corporate</h3>
+          <a href="about-us.html"><i class="fa fa-angle-double-right"></i> About Fifty Ads</a> <a href="contact.html"><i class="fa fa-angle-double-right"></i> Contact FiftyAds</a> <a href="busniess-ads.html"><i class="fa fa-angle-double-right"></i> Business Advertising</a> <a href="privacy-policy.html"><i class="fa fa-angle-double-right"></i> Privacy Policy</a> <a href="all-categories.html"><i class="fa fa-angle-double-right"></i> Site Map</a> </div>
+        <div class="col-lg-2 popular-categories">
+          <h3><img src="img/categories_icon.png"> Popular Categories</h3>
+          <a href="properties.html"><i class="fa fa-angle-double-right"></i> Properties <span>(5400)</span></a> <a href="busniess-services.html"><i class="fa fa-angle-double-right"></i> Business Services <span>(1200)</span></a> <a href="motors.html"><i class="fa fa-angle-double-right"></i> Motors <span>(10279)</span></a> <a href="jobs.html"><i class="fa fa-angle-double-right"></i> Jobs <span>(11400)</span></a> <a href="events.html"><i class="fa fa-angle-double-right"></i> Events <span>(7239)</span></a> </div>
+        <div class="col-lg-3 pull-right">
+          <div class="get-deal">
+            <h3><i class="fa fa-envelope"></i> Get deal</h3>
+            <div class="block-content-info">
+              <p>Get exclusive deal offers delivered right to your inbox</p>
+              <div class="input-box">
+                <input title="Sign up for our newsletter" onfocus="if(this.value=='Enter your email...') this.value='';" onblur="if(this.value=='') this.value='Enter your email...';" type="text" name="email" Placeholder="Enter your email..." />
+                <a href="#" class="button"><span><i class="fa fa-arrow-circle-o-right"></i> </span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="footer-info">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6"> &copy; 2014 FiftyAds.com | All Rights Reserved. </div>
+        <div class="col-lg-6 text-right"> Created and Maintained by <a href="http://crosswindtechnologies.net/" target="_blank">Crosswind Technologies</a> </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- JavaScript --> 
+<script src="js/jquery-1.10.2.js"></script> 
+<script src="js/bootstrap.js"></script> 
+<script src="js/xcharts.js"></script>
+
+<script src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+    <script type="text/javascript" src="js/responsiveTabs.js"></script>
+    <script>
+    $(document).ready(function() {
+			RESPONSIVEUI.responsiveTabs();
+		})
+    </script>
+<!-- Bootstrap Select --> 
+
+<script src="js/jquery.nicescroll.min.js"></script> 
+<script>
+
+// Show Overflow of Body when Everything has Loaded //
+$(window).load(function(){
+    $("body").css("overflow", "auto");        
+    var nice=$('html').niceScroll({cursorborder:"",cursorcolor:"#f39c12",cursorwidth:"4px"});
+});</script> 
+<script src="js/jquery.newsTicker.js"></script> 
+<script>
+    		
+            var nt_title = $('#nt-title').newsTicker({
+                row_height: 30,
+                max_rows: 1,
+                duration: 3000,
+                pauseOnHover: 0
+            });
+           var nt_title1 = $('#nt-title1').newsTicker({
+                row_height: 30,
+                max_rows: 1,
+                duration: 3000,
+                pauseOnHover: 0
+            });
+        </script> 
+<script type="text/javascript">
+$(document).ready(function(){
+    $(".featured-thumbnail").tooltip();   
+});
+
+		</script> 
+<script>
+	$('#news-carousel').carousel({
+		interval:   4000
+	});
+	$('#myCarousel').carousel({
+		interval:  false
+	});
+	
+		$('.tab-content .carousel').carousel({
+    interval: false
+}) ;
+
+$('#carousel-tab2').carousel({
+    interval: false
+}) 
+	
+</script> 
+<script type="text/javascript" src="js/bootstrap-slider.js"></script> 
+<script>$("#min").slider();
+$("#min").on('slide', function(slideEvt) {
+	$("#minSliderVal").text(slideEvt.value);
+	
+});
+$("#max").slider({});
+$("#max").on('slide', function(slideEvt) {
+	$("#maxSliderVal").text(slideEvt.value);
+});
+</script>
+<script type="text/javascript" src="js/bootstrap-select.js"></script> 
+
+<script type="text/javascript">
+        $(window).on('load', function () {
+
+            $('.selectpicker').selectpicker({
+                'selectedText': 'cat'
+            });
+
+            // $('.selectpicker').selectpicker('hide');
+        });
+    </script> 
+<script type="text/javascript">
+(function ($, window, delay) {
+  // http://jsfiddle.net/AndreasPizsa/NzvKC/
+  var theTimer = 0;
+  var theElement = null;
+    var theLastPosition = {x:0,y:0};
+  $('[data-toggle]')
+    .closest('li')
+    .on('mouseenter', function (inEvent) {
+    if (theElement) theElement.removeClass('open');
+    window.clearTimeout(theTimer);
+    theElement = $(this);
+
+    theTimer = window.setTimeout(function () {
+      theElement.addClass('open');
+    }, delay);
+  })
+    .on('mousemove', function (inEvent) {
+        if(Math.abs(theLastPosition.x - inEvent.ScreenX) > 4 || 
+           Math.abs(theLastPosition.y - inEvent.ScreenY) > 4)
+        {
+            theLastPosition.x = inEvent.ScreenX;
+            theLastPosition.y = inEvent.ScreenY;
+            return;
+        }
+        
+    if (theElement.hasClass('open')) return;
+    window.clearTimeout(theTimer);
+    theTimer = window.setTimeout(function () {
+      theElement.addClass('open');
+    }, delay);
+  })
+    .on('mouseleave', function (inEvent) {
+    window.clearTimeout(theTimer);
+    theElement = $(this);
+    theTimer = window.setTimeout(function () {
+      theElement.removeClass('open');
+    }, delay);
+  });
+})(jQuery, window, 200); // 200 is the delay in milliseconds
+</script> 
+
+<script type="text/javascript" src="js/sm-megamenu.js"></script> 
+<script>$(function(){
+$('a[title]').tooltip();
+});
+$('#states').click(function() {
+    $('.states').slideToggle('fast');
+    return false;
+});
+
+
+function toggleChevron(e) {
+    $(e.target)
+        .prev('.panel-heading')
+        .find("i.indicator")
+        .toggleClass('fa-caret-down fa-caret-right');
+}
+$('#accordion').on('hidden.bs.collapse', toggleChevron);
+$('#accordion').on('shown.bs.collapse', toggleChevron);
+</script>
+<script>
+$(document).ready(function() {
+    var $btnSets = $('#responsive'),
+    $btnLinks = $btnSets.find('a');
+ 
+    $btnLinks.click(function(e) {
+        e.preventDefault();
+        $(this).siblings('a.active').removeClass("active");
+        $(this).addClass("active");
+        var index = $(this).index();
+        $("div.user-menu>div.user-menu-content").removeClass("active");
+        $("div.user-menu>div.user-menu-content").eq(index).addClass("active");
+    });
+});
+
+$( document ).ready(function() {
+    $("[rel='tooltip']").tooltip();    
+ 
+    $('.view').hover(
+        function(){
+            $(this).find('.caption').slideDown(250); //.fadeIn(250)
+        },
+        function(){
+            $(this).find('.caption').slideUp(250); //.fadeOut(205)
+        }
+    ); 
+});
+</script>
+<script type="text/javascript" src="js/jquery.bootstrap.newsbox.js"></script> 
+<script type="text/javascript" src="js/jquery.bxslider.js"></script> 
+<script>
+$('.bxslider').bxSlider({
+  pagerCustom: '#bx-pager'
+});
+</script>
+<script>
+$('.btn-vertical-slider').on('click', function () {
+        
+        if ($(this).attr('data-slide') == 'next') {
+            $('#myCarousel').carousel('next');
+        }
+        if ($(this).attr('data-slide') == 'prev') {
+            $('#myCarousel').carousel('prev')
+        }
+
+    });
+ $(function () {
+        $(".popular-search-items").bootstrapNews({
+            newsPerPage:5,
+            autoplay: false,
+			pauseOnHover:true,
+            direction: 'up',
+            newsTickerInterval: 4000,
+            onToDo: function () {
+                //console.log(this);
+            }
+        });
+		
+		
+    });
+	</script>
+    
+  
+</body>
+<!-- InstanceEnd --></html>

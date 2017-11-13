@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+<title>Classifieds</title>
+
+<!-- Bootstrap core CSS -->
+
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="css/megamenu.css" />
+<!-- FONTAWESOME STYLE -->
+<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"><link rel="stylesheet" href="css/font-awesome.css" />
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Droid+Sans">
+<link rel="stylesheet" href="css/vertical.news.slider.css">
+<link href="css/bootstrap-select.css" rel="stylesheet" media="screen" />
+
+
+</head>
+
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="col-lg-12">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="fiftyads.com" title="fiftyads.com"></a> </div>
+      
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="country">
+            <select class="selectpicker input-block-level">
+              <option data-icon="icon-uk-flag flag-icon">Uk</option>
+              <option data-icon="icon-australia-flag flag-icon">Australia</option>
+            </select>
+          </li>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Login</a>
+            <ul class="dropdown-menu">
+              <div class="navbar-form" role="search">
+                <div class="input-group"> <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                  <input type="text" class="form-control" placeholder="Username">
+                </div>
+                <div class="input-group"> <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+                  <input type="password" class="form-control" placeholder="Password">
+                </div>
+                <div class="input-group">
+                  <div class="checkbox">
+                    <label>
+                      <input type="checkbox" name="remember" value="1">
+                      Remember me </label>
+                  </div>
+                  <br>
+                </div>
+                <div class="input-group">
+                  <div class="row">
+                    <div class="col-lg-3"> <a id="btn-login" href="#" class="btn btn-login btn-proper">Login </a> </div>
+                    <div class="col-lg-9"> <a id="btn-fblogin" href="#" class="btn btn-login btn-primary">Login via Facebook</a> </div>
+                  </div>
+                </div>
+                <div class="form-bottom"> Don't have an account! <a href="#" onClick="$('#loginbox').hide(); $('#signupbox').show()"> Sign Up Here </a> </div>
+              </div>
+            </ul>
+          </li>
+          <li><a href="signup.html">Register</a> </li>
+          <li class="dropdown"> <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> My Fifty Ads <span class="badge">14 </span><span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="signup.html">Create Account</a></li>
+              <li><a href="join-ad.html">Saved Ads (0)</a></li>
+              <li><a href="join-ad.html">Saved Searches</a></li>
+              <li><a href="manage-myads.html">Manage my Ads</a></li>
+            </ul>
+          </li>
+          <li class="post-ad"><a href="place-ad.html">Place your Ad <i class="fa fa-chevron-circle-right"></i></a> </li>
+        </ul>
+      </div>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+  <!-- /.container --> 
+</nav>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3 col-md-3 col-sm-4">
+      <div class="select-area">
+        <h3><i class="fa fa-map-marker"></i> Select your Area</h3>
+        <a href="#" id="states" class="country-nm">United Kingdom <i class="glyphicon fa fa-plus-circle pull-right"></i></a>
+<div class="states">
+<div class="panel-group" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#england">
+         England
+        </a><i class="indicator glyphicon fa fa-caret-right pull-right"></i>
+      </h4>
+    </div>
+    <div id="england" class="panel-collapse collapse">
+      <div class="panel-body">
+      <div class="row">
+		<div class="col-lg-6">
+       <ul>
+       <li><a href="#">Bedfordshire</a></li>
+       <li><a href="#">Berkshire</a></li>
+       <li><a href="#">Bristol</a></li>
+       <li><a href="#">Buckinghamshire</a></li>
+       <li><a href="#">Cambridgeshire</a></li>
+       <li><a href="#">Cheshire</a></li>
+       <li><a href="#">Cornwall</a></li>
+       <li><a href="#">County Durham</a></li>
+       <li><a href="#">Cumbria</a></li>
+       <li><a href="#">Derbyshire</a></li>
+       <li><a href="#">Devon</a></li>
+       <li><a href="#">Dorset</a></li>
+       <li><a href="#">East Sussex</a></li>
+       <li><a href="#">East Yorkshire</a></li>
+       <li><a href="#">Essex</a></li>
+        <li><a href="#">Gloucestershire</a></li>
+       <li><a href="#">Hampshire</a></li>
+       <li><a href="#">Herefordshire</a></li>
+       <li><a href="#">Isle of Wight</a></li>
+       <li><a href="#">Kent</a></li>
+       <li><a href="#">Lancashire</a></li>
+       <li><a href="#">Leicestershire</a></li>
+       </ul>
+       </div>
+       <div class="col-lg-6">
+       <ul>
+        <li><a href="#">Lincolnshire</a></li>
+       <li><a href="#">London</a></li>
+       <li><a href="#">Manchester</a></li>
+       <li><a href="#">Merseyside</a></li>
+       <li><a href="#">Norfolk</a></li>
+       <li><a href="#">North Yorkshire</a></li>
+       <li><a href="#">Northamptonshire</a></li>
+       <li><a href="#">Northumberland</a></li>
+       <li><a href="#">Nottinghamshire</a></li>
+       <li><a href="#">Oxfordshire</a></li>
+       <li><a href="#">Rutland</a></li>
+       <li><a href="#">Shropshire</a></li>
+       <li><a href="#">South Yorkshire</a></li>
+       <li><a href="#">Staffordshire</a></li>
+       <li><a href="#">Suffolk</a></li>
+       <li><a href="#">Surrey</a></li>
+       <li><a href="#">Tyne and Wear</a></li>
+       <li><a href="#">Warwickshire</a></li>
+       <li><a href="#">West Midlands</a></li>
+       <li><a href="#">West Sussex</a></li>
+       <li><a href="#">West Yorkshire</a></li>
+       <li><a href="#">Wiltshire</a></li>
+       </ul>
+       </div>
+       </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#northern-ireland">
+           Northern Ireland 
+        </a><i class="indicator glyphicon fa fa-caret-right pull-right"></i>
+      </h4>
+    </div>
+    <div id="northern-ireland" class="panel-collapse collapse">
+      <div class="panel-body">
+      <div class="row">
+      <div class="col-lg-6">
+        <ul>
+      <li><a href="#">Belfast</a></li>
+       <li><a href="#">County Antrim</a></li>
+       <li><a href="#">County Armagh</a></li>
+       <li><a href="#">County Down</a></li>
+      </ul>
+      </div>
+       <div class="col-lg-6">
+      <ul>
+      <li><a href="#">County Fermanagh</a></li>
+       <li><a href="#">County Londonderry</a></li>
+       <li><a href="#">County T</a></li>
+       </ul>
+       </div></div>
+       
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#scotland">
+         Scotland
+        </a><i class="indicator glyphicon fa fa-caret-right pull-right"></i>
+      </h4>
+    </div>
+    <div id="scotland" class="panel-collapse collapse">
+      <div class="panel-body">
+      <div class="row">
+      <div class="col-lg-6">
+      <ul>
+      <li><a href="#">Aberdeen</a></li>
+       <li><a href="#">Aberdeenshire</a></li>
+       <li><a href="#">Angus</a></li>
+       <li><a href="#">Argyll and Bute</a></li>
+       <li><a href="#">Clackmannanshire</a></li>
+       <li><a href="#">Dumfries and Galloway</a></li>
+       <li><a href="#">Dundee</a></li>
+       <li><a href="#">East Ayrshire</a></li>
+       <li><a href="#">East Dunbartonshire</a></li>
+       <li><a href="#">East Lothian</a></li>
+       <li><a href="#">East Renfrewshire</a></li>
+       <li><a href="#">Edinburgh</a></li>
+       <li><a href="#">Falkirk</a></li>
+       <li><a href="#">Fife</a></li>
+       <li><a href="#">Glasgow</a></li>
+       <li><a href="#">Highland</a></li>
+      </ul>
+      </div>
+      <div class="col-lg-6">
+      <ul>
+      <li><a href="#">Inverclyde</a></li>
+       <li><a href="#">Midlothian</a></li>
+       <li><a href="#">Moray</a></li>
+       <li><a href="#">Na H-Eileanan an Iar</a></li>
+       <li><a href="#">North Ayrshire</a></li>
+       <li><a href="#">North Lanarkshire</a></li>
+       <li><a href="#">Orkney Islands</a></li>
+       <li><a href="#">Perth and Kinross</a></li>
+       <li><a href="#">Renfrewshire</a></li>
+       <li><a href="#">Scottish Borders</a></li>
+       <li><a href="#">Shetland Islands</a></li>
+       <li><a href="#">South Ayrshire</a></li>
+       <li><a href="#">South Lanarkshire</a></li>
+       <li><a href="#">Stirling</a></li>
+       <li><a href="#">West Dunbartonshire</a></li>
+       <li><a href="#">West Lothian</a></li>
+       </ul>
+       </div>
+       </div>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#wales">
+         Wales
+        </a><i class="indicator glyphicon fa fa-caret-right pull-right"></i>
+      </h4>
+    </div>
+    <div id="wales" class="panel-collapse collapse">
+      <div class="panel-body">
+<div class="row">
+      <div class="col-lg-6">
+      <ul>
+       <li><a href="#">Blaenau Gwent</a></li>
+       <li><a href="#">Bridgend</a></li>
+       <li><a href="#">Caerphilly</a></li>
+       <li><a href="#">Cardiff</a></li>
+       <li><a href="#">Carmarthenshire</a></li>
+       <li><a href="#">Ceredigion</a></li>
+       <li><a href="#">Conwy</a></li>
+       <li><a href="#">Denbighshire</a></li>
+       <li><a href="#">Flintshire</a></li>
+       <li><a href="#">Gwynedd</a></li>
+       <li><a href="#">Isle of Anglesey</a></li>
+       </ul>
+      </div>
+      <div class="col-lg-6">
+      <ul>
+       <li><a href="#">Merthyr Tydfil</a></li>
+       <li><a href="#">Monmouthshire</a></li>
+       <li><a href="#">Neath Port Talbot</a></li>
+       <li><a href="#">Newport</a></li>
+       <li><a href="#">Pembrokeshire</a></li>
+       <li><a href="#">Powys</a></li>
+       <li><a href="#">Rhondda Cynon Taf</a></li>
+       <li><a href="#">Swansea</a></li>
+       <li><a href="#">Torfaen</a></li>
+       <li><a href="#">Vale of Glamorgan</a></li>
+       <li><a href="#">Wrexham</a></li>
+       
+       </ul>
+      </div>
+       </div>
+      
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+      </div>
+      <div class="search-pane">
+        <h3><i class="fa fa-search"></i> Search Ads</h3>
+        <input type="text" placeholder="Enter Postcode or Location" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Postcode or Location'" class="btn-block">
+        <input type="text" placeholder="What Are You Looking For?" onfocus="this.placeholder = ''" onblur="this.placeholder = 'What Are You Looking For?'" class="btn-block">
+        <select class="selectpicker" title="All Categories" data-live-search="true" multiple>
+          <option>Community</option>
+          <option>For Sale</option>
+          <option>Jobs</option>
+          <option>Property</option>
+          <option>Services</option>
+          <option>Pets & Petcare</option>
+          <option>Motors</option>
+        </select>
+        <a href="all-categories.html" class="btn btn-block btn-proper"> <i class="fa fa-search"></i> Search</a>
+      </div>
+      <div class="block block-megamenu"> <i class="icon-categories"></i>
+        <div class="block-title"> <span><i class="fa fa-star"></i> Categories</span> </div>
+        <div class="sm_megamenu_wrapper_vertical_menu">
+          <ul class="nav-menu sm_megamenu_menu sm_megamenu_menu_black sidebar-nav">
+            <li class="sm_megamenu_lv1 sm_megamenu_drop"> <a class="sm_megamenu_head sm_megamenu_drop" href="#"> <span class="sm_megamenu_nodesc"> <span class="sm_megamenu_title">Community <i>10,234</i></span> </span> </a>
+              <div class="sm_megamenu_dropdown_3columns">
+                <div class="sm_megamenu_col_3 sm_megamenu_firstcolumn">
+                  <div class="sm_megamenu_col_1 sm_megamenu_firstcolumn">
+                    <div class="sm_megamenu_content">
+                      <ul class="level0 custom shown-product-types">
+                        <ul>
+                          <li><a href="#"> Artists & Theatres</a></li>
+                          <li><a href="#"> Babysitting</a></li>
+                          <li><a href="#"> Classes</a></li>
+                          <li><a href="#"> Community Chest</a></li>
+                          <li><a href="#"> Creative Writing</a></li>
+                        </ul>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="sm_megamenu_col_1">
+                    <div class="sm_megamenu_content">
+                      <ul class="level0 custom shown-product-types">
+                        <li><a href="#"> Events, Gigs & Nightlife</a></li>
+                        <li><a href="#"> Fitness, Dance & Health</a></li>
+                        <li><a href="#"> Groups & Associations</a></li>
+                        <li><a href="#"> Lost & Found Stuff</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="sm_megamenu_col_1 last-col"> <img src="img/category-community.jpg"> <br>
+                    <span class="listings-count"><i class="fa fa-check-circle"></i> 10,234</span></div>
+                </div>
+              </div>
+            </li>
+            <li class="sm_megamenu_lv1 sm_megamenu_drop"> <a class="sm_megamenu_head sm_megamenu_drop" href="#"> <span class="sm_megamenu_nodesc"> <span class="sm_megamenu_title">For Sale <i>16,242</i></span> </span> </a>
+              <div class="sm_megamenu_dropdown_3columns">
+                <div class="sm_megamenu_col_3 sm_megamenu_firstcolumn">
+                  <div class="sm_megamenu_col_1 sm_megamenu_firstcolumn">
+                    <div class="sm_megamenu_content">
+                      <ul class="level0 custom shown-product-types">
+                        <ul>
+                          <li><a href="#"> Antiques</a></li>
+                          <li><a href="#"> Bikes</a></li>
+                          <li><a href="#"> Boats</a></li>
+                          <li><a href="#"> Furniture</a></li>
+                          <li><a href="#"> Clothes</a></li>
+                          <li><a href="#"> Footwear & Accessories</a></li>
+                        </ul>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="sm_megamenu_col_1">
+                    <div class="sm_megamenu_content">
+                      <ul class="level0 custom shown-product-types">
+                        <li><a href="#"> Hand Made</a></li>
+                        <li><a href="#"> Heavy Equipments</a></li>
+                        <li><a href="#"> Music & Instruments</a></li>
+                        <li><a href="#"> Office Furnitures</a></li>
+                        <li><a href="#"> Phones & Telecoms</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="sm_megamenu_col_1 last-col"> <img src="img/category-community.JPG"> <br>
+                    <span class="listings-count"><i class="fa fa-check-circle"></i> 16,242</span></div>
+                </div>
+              </div>
+            </li>
+            <li class="sm_megamenu_lv1 sm_megamenu_drop"> <a class="sm_megamenu_head sm_megamenu_drop" href="#"> <span class="sm_megamenu_nodesc"> <span class="sm_megamenu_title">Jobs <i>12,234</i></span> </span> </a>
+              <div class="sm_megamenu_dropdown_3columns">
+                <div class="sm_megamenu_col_3 sm_megamenu_firstcolumn">
+                  <div class="sm_megamenu_col_1 sm_megamenu_firstcolumn">
+                    <div class="sm_megamenu_content">
+                      <ul class="level0 custom shown-product-types">
+                        <ul>
+                          <li><a href="#"> Accounting</a></li>
+                          <li><a href="#"> Admin/Office</a></li>
+                          <li><a href="#"> Biotech/Science</a></li>
+                          <li><a href="#"> Customer Services</a></li>
+                          <li><a href="#"> Education</a></li>
+                          <li><a href="#"> Food</a></li>
+                          <li><a href="#"> General Labour</a></li>
+                          <li><a href="#"> Housing/Real Estate</a></li>
+                          <li><a href="#"> Human Resources</a></li>
+                          <li><a href="#"> Legal</a></li>
+                          <li><a href="#"> Manufacturing</a></li>
+                        </ul>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="sm_megamenu_col_1"> 
+                    <div class="sm_megamenu_content">
+                      <ul class="level0 custom shown-product-types">
+                        <li><a href="#"> Medical</a></li>
+                        <li><a href="#"> Non-profit Sector</a></li>
+                        <li><a href="#"> Saloon/Spa/Fitness</a></li>
+                        <li><a href="#"> Security</a></li>
+                        <li><a href="#"> Software</a></li>
+                        <li><a href="#"> Web/Info Design</a></li>
+                        <li><a href="#"> Part-time Jobs</a></li>
+                        <li><a href="#"> Travel & Overseas</a></li>
+                        <li><a href="#"> Volunteer & Charity Work</a></li>
+                        <li><a href="#"> Restaurant Management</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="sm_megamenu_col_1 last-col"> <img src="img/category-community.JPG"> <br>
+                    <span class="listings-count"><i class="fa fa-check-circle"></i> 12,234</span></div>
+                </div>
+              </div>
+            </li>
+            <li class="sm_megamenu_lv1 sm_megamenu_drop"> <a class="sm_megamenu_head sm_megamenu_drop" href="#"> <span class="sm_megamenu_nodesc"> <span class="sm_megamenu_title">Property <i>13,123</i></span> </span> </a>
+              <div class="sm_megamenu_dropdown_3columns">
+                <div class="sm_megamenu_col_3 sm_megamenu_firstcolumn">
+                  <div class="sm_megamenu_col_1 sm_megamenu_firstcolumn">
+                    <div class="sm_megamenu_content">
+                      <ul class="level0 custom shown-product-types">
+                        <ul>
+                          <li><a href="#"> Property For Sale</a></li>
+                          <li><a href="#"> Property to Rent</a></li>
+                          <li><a href="#"> Property to Share</a></li>
+                          <li><a href="#"> Business Premises</a></li>
+                        </ul>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="sm_megamenu_col_1">
+                    <div class="sm_megamenu_content">
+                      <ul class="level0 custom shown-product-types">
+                        <li><a href="#"> Garages</a></li>
+                        <li><a href="#"> Rooms to Rent</a></li>
+                        <li><a href="#"> Student Accomodation</a></li>
+                        <li><a href="#"> Lands</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="sm_megamenu_col_1 last-col"> <img src="img/category-community.JPG"> <br>
+                    <span class="listings-count"><i class="fa fa-check-circle"></i> 13,123</span></div>
+                </div>
+              </div>
+            </li>
+            <li class="sm_megamenu_lv1 sm_megamenu_drop"> <a class="sm_megamenu_head sm_megamenu_drop" href="#"> <span class="sm_megamenu_nodesc"> <span class="sm_megamenu_title">Services <i>8,372</i></span> </span> </a>
+              <div class="sm_megamenu_dropdown_3columns">
+                <div class="sm_megamenu_col_3 sm_megamenu_firstcolumn">
+                  <div class="sm_megamenu_col_1 sm_megamenu_firstcolumn">
+                    <div class="sm_megamenu_content">
+                      <ul class="level0 custom shown-product-types">
+                        <ul>
+                          <li><a href="#"> Building, Home & Removals</a></li>
+                          <li><a href="#"> Business Services</a></li>
+                          <li><a href="#"> Social, Care & Mobility</a></li>
+                          <li><a href="#"> Health & Fitness</a></li>
+                          <li><a href="#"> Motor Services</a></li>
+                        </ul>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="sm_megamenu_col_1">
+                    <div class="sm_megamenu_content">
+                      <ul class="level0 custom shown-product-types">
+                        <li><a href="#"> Equestrian Services</a></li>
+                        <li><a href="#"> Property & Shipping</a></li>
+                        <li><a href="#"> Tax, Money & Visas</a></li>
+                        <li><a href="#"> Telecoms & Computers</a></li>
+                        <li><a href="#"> Travel Services & Tours</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="sm_megamenu_col_1 last-col"> <img src="img/category-community.JPG"> <br>
+                    <span class="listings-count"><i class="fa fa-check-circle"></i> 8,372</span></div>
+                </div>
+              </div>
+            </li>
+            <li class="sm_megamenu_lv1 sm_megamenu_drop"> <a class="sm_megamenu_head sm_megamenu_drop" href="#"> <span class="sm_megamenu_nodesc"> <span class="sm_megamenu_title"> Pets & Petcare <i>9,675</i></span> </span> </a>
+              <div class="sm_megamenu_dropdown_3columns">
+                <div class="sm_megamenu_col_3 sm_megamenu_firstcolumn">
+                  <div class="sm_megamenu_col_1 sm_megamenu_firstcolumn">
+                    <div class="sm_megamenu_content">
+                      <ul class="level0 custom shown-product-types">
+                        <ul>
+                          <li><a href="#"> Dogs & Puppies</a></li>
+                          <li><a href="#"> Cats & Kittens</a></li>
+                          <li><a href="#"> Rabbits & Bunnies</a></li>
+                          <li><a href="#"> Birds</a></li>
+                        </ul>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="sm_megamenu_col_1">
+                    <div class="sm_megamenu_content">
+                      <ul class="level0 custom shown-product-types">
+                        <li><a href="#"> Petsitters & Dogwalkers</a></li>
+                        <li><a href="#"> Equipment & Accessories</a></li>
+                        <li><a href="#"> Amphibians</a></li>
+                        <li><a href="#"> Missing, Lost & Found</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="sm_megamenu_col_1 last-col"> <img src="img/category-community.JPG"> <br>
+                    <span class="listings-count"><i class="fa fa-check-circle"></i> 9,675</span></div>
+                </div>
+              </div>
+            </li>
+            <li class="sm_megamenu_lv1 sm_megamenu_drop"> <a class="sm_megamenu_head sm_megamenu_drop" href="#"> <span class="sm_megamenu_nodesc"> <span class="sm_megamenu_title"> Motors <i>12,098</i></span> </span> </a>
+              <div class="sm_megamenu_dropdown_3columns">
+                <div class="sm_megamenu_col_3 sm_megamenu_firstcolumn">
+                  <div class="sm_megamenu_col_1 sm_megamenu_firstcolumn">
+                    <div class="sm_megamenu_content">
+                      <ul class="level0 custom shown-product-types">
+                        <ul>
+                          <li><a href="#"> Cars</a></li>
+                          <li><a href="#"> Commercial Vehicles</a></li>
+                          <li><a href="#"> Motorcycles</a></li>
+                          <li><a href="#"> Motor Services</a></li>
+                          <li><a href="#"> Trailers</a></li>
+                        </ul>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="sm_megamenu_col_1">
+                    <div class="sm_megamenu_content">
+                      <ul class="level0 custom shown-product-types">
+                        <li><a href="#"> Vans</a></li>
+                        <li><a href="#"> Motorhomes</a></li>
+                        <li><a href="#"> Spare Parts & Accessories</a></li>
+                        <li><a href="#"> Number Plates</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="sm_megamenu_col_1 last-col"> <img src="img/category-community.JPG"> <br>
+                    <span class="listings-count"><i class="fa fa-check-circle"></i> 12,098</span></div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="social-links">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="social-icon twitter"> <a target="_blank" href="#"> <img src="img/twitter.png" alt=""> </a> </div>
+            <div class="social-icon facebook"> <a target="_blank" href="#"> <img src="img/facebook.png" alt=""> </a> </div>
+            <div class="social-icon pinterest"> <a target="_blank" href="#"> <img src="img/pinterest.png" alt=""> </a> </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="social-icon google"> <a target="_blank" href="#"> <img src="img/google.png" alt=""> </a> </div>
+            <div class="social-icon linkedin"> <a target="_blank" href="#"> <img src="img/linkedin.png" alt=""> </a> </div>
+            <div class="social-icon connect"> <a target="_blank" href="#"> <img src="img/connect.jpg" alt=""> </a> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-9 col-md-9 col-sm-8"> 
+      <!--<div id="nt-title-container">
+        <ul id="nt-title">
+          <li> Success! <strong>Paul</strong> has just <strong>sold</strong> a <strong>Mercedes-Benz E-class</strong> in <strong>Liverpool</strong> </li>
+          <li> <strong>Julia</strong> is availiable for<strong> home cleaning</strong> in <strong>Manchester</strong> </li>
+          <li> Hey, <strong>Uber</strong> has a <strong>job opening</strong> in <strong>London</strong> </li>
+          <li> Boom! <strong>Vince</strong> just sold a <strong>Washing Machine</strong> in <strong>Sheffield</strong></li>
+        </ul>
+      </div>--> 
+      <!-- Carousel
+            ================================================== -->
+      <div id="news-carousel" class="carousel slide news"> 
+        <!-- Indicators -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <blockquote>
+              <p>Success! <strong>Paul</strong> has just <strong>sold</strong> a <strong>Mercedes-Benz E-class</strong> in <strong>Liverpool</strong></p>
+              <small> <cite title="Source Title">Motors</cite></small> </blockquote>
+          </div>
+          <div class="item">
+            <blockquote>
+              <p><strong>Julia</strong> is availiable for<strong> home cleaning</strong> in <strong>Manchester</strong></p>
+              <small> <cite title="Source Title">Jobs</cite></small> </blockquote>
+          </div>
+          <div class="item">
+            <blockquote>
+              <p>Hey, <strong>Uber</strong> has a <strong>job opening</strong> in <strong>London</strong></p>
+              <small> <cite title="Source Title">Jobs</cite></small> </blockquote>
+          </div>
+          <div class="item">
+            <blockquote>
+              <p>Boom! <strong>Vince</strong> just sold a <strong>Washing Machine</strong> in <strong>Sheffield</strong></p>
+              <small> <cite title="Source Title">For Sale</cite></small> </blockquote>
+          </div>
+        </div>
+      </div>
+      <!-- End Carousel -->
+      <div class="row">
+     
+        <div class="col-lg-7">
+          <div class="panel panel-default triggerAnimation animated featured-listings" data-animate="bounceIn">
+            <div class="panel-heading">Premium listings</div>
+            <div class="panel-body">
+              <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit Vesti bulum </h4>
+              <div class="featured-gallery">
+                <div class="row">
+                  <div class="col-sm-3 col-xs-4 featured-thumbnail"  data-toggle="tooltip" data-placement="top" title="Programmer job availiable at Uber in London"> <a href="details.html" class=""> <img alt="" src="img/prem-lstgs-1.jpg" > </a> </div>
+                  <div class="col-sm-3 col-xs-4 featured-thumbnail"  data-toggle="tooltip" data-placement="top"  title="Porsche Boxster S, 2.9 2dr reg Apr 2007 "> <a href="details.html" class=""> <img alt="" src="img/prem-lstgs-2.jpg"  /> </a> </div>
+                  <div class="col-sm-3 col-xs-4 featured-thumbnail" data-toggle="tooltip" data-placement="top"  title="Please find my lost car"> <a href="details.html" class="" > <img alt="" src="img/prem-lstgs-3.jpg"  /> </a> </div>
+                  <div class="col-sm-3 col-xs-4 featured-thumbnail" data-toggle="tooltip" data-placement="top"  title="Mini copper looking for a quick sell !! - London - £2,485"> <a href="details.html" class="" > <img alt="" src="img/prem-lstgs-1.jpg"  /> </a> </div>
+                  <div class="col-sm-3 col-xs-4 featured-thumbnail" data-toggle="tooltip" data-placement="top"  title="Old MP3 player for sale"> <a href="details.html" class="" > <img alt="" src="img/prem-lstgs-2.jpg"  /> </a> </div>
+                  <div class="col-sm-3 col-xs-4 featured-thumbnail" data-toggle="tooltip" data-placement="top" title="Designer job availiable at Uber in London"> <a href="details.html" class="" > <img alt="" src="img/prem-lstgs-4.png"  /> </a> </div>
+                   <div class="col-sm-3 col-xs-4 featured-thumbnail"  data-toggle="tooltip" data-placement="top" title="Programmer job availiable at Uber in London"> <a href="details.html" class=""> <img alt="" src="img/prem-lstgs-1.jpg" > </a> </div>
+                  <div class="col-sm-3 col-xs-4 featured-thumbnail"  data-toggle="tooltip" data-placement="top"  title="Porsche Boxster S, 2.9 2dr reg Apr 2007 "> <a href="details.html" class=""> <img alt="" src="img/prem-lstgs-2.jpg"  /> </a> </div>
+                  <div class="col-sm-3 col-xs-4 featured-thumbnail"  data-toggle="tooltip" data-placement="top" title="Programmer job availiable at Uber in London"> <a href="details.html" class=""> <img alt="" src="img/prem-lstgs-1.jpg" > </a> </div>
+                  <div class="col-sm-3 col-xs-4 featured-thumbnail"  data-toggle="tooltip" data-placement="top"  title="Porsche Boxster S, 2.9 2dr reg Apr 2007 "> <a href="details.html" class=""> <img alt="" src="img/prem-lstgs-2.jpg"  /> </a> </div>
+                  <div class="col-sm-3 col-xs-4 featured-thumbnail" data-toggle="tooltip" data-placement="top"  title="Please find my lost car"> <a href="details.html" class="" > <img alt="" src="img/prem-lstgs-3.jpg"  /> </a> </div>
+                  <div class="col-sm-3 col-xs-4 featured-thumbnail" data-toggle="tooltip" data-placement="top"  title="Mini copper looking for a quick sell !! - London - £2,485"> <a href="details.html" class="" > <img alt="" src="img/prem-lstgs-1.jpg"  /> </a> </div>
+                  <div class="col-sm-3 col-xs-4 featured-thumbnail" data-toggle="tooltip" data-placement="top"  title="Old MP3 player for sale"> <a href="details.html" class="" > <img alt="" src="img/prem-lstgs-2.jpg"  /> </a> </div>
+                  <div class="col-sm-3 col-xs-4 featured-thumbnail" data-toggle="tooltip" data-placement="top" title="Designer job availiable at Uber in London"> <a href="details.html" class="" > <img alt="" src="img/prem-lstgs-4.png"  /> </a> </div>
+                   <div class="col-sm-3 col-xs-4 featured-thumbnail"  data-toggle="tooltip" data-placement="top" title="Programmer job availiable at Uber in London"> <a href="details.html" class=""> <img alt="" src="img/prem-lstgs-1.jpg" > </a> </div>
+                  <div class="col-sm-3 col-xs-4 featured-thumbnail"  data-toggle="tooltip" data-placement="top"  title="Porsche Boxster S, 2.9 2dr reg Apr 2007 "> <a href="details.html" class=""> <img alt="" src="img/prem-lstgs-2.jpg"  /> </a> </div>
+                </div>
+              </div>
+              <a href="#" class="btn-view pull-right">View All Listings <i class="fa fa-angle-double-right"></i> </a> </div>
+          </div>
+        </div>
+<div class="col-lg-5">
+<div class="news-holder cf">
+<h3><i class="fa fa-car"></i>  Recent Car Ads</h3>
+    <ul class="news-headlines">
+    <li class="selected">Skoda Octavia 2.0T FSI VRS
+2.0T FSI VRS FULL SKODA SERVICE </li>
+      <li>Renault Clio Expression QS5, 16v, 1.2, 03 red, 3</li>
+      
+      <li>Ford Ranger Thunder, 2004 top of the range 4x4 double
+</li>
+      <li>VOLKSWAGEN PASSAT S TDI, SILVER, 2003</li>
+      <!-- li.highlight gets inserted here -->
+    </ul>
+
+    <div class="news-preview">
+<div class="news-content top-content">
+         <img src="img/car2.jpg">
+        <p><a href="#">Skoda Octavia 2.0T FSI VRS
+2.0T FSI VRS FULL SKODA SERVICE </a></p>
+
+        <p>Skoda Octavia 2.0T FSI VRS FULL SKODA SERVICE HISTORY, Hatchback, Manual, BLUE, 2008, 58385 miles</p>
+      </div>
+      <div class="news-content">
+        <img src="img/car1.jpg">
+        <p><a href="#">Renault Clio Expression QS5, 16v, 1.2, 03 red, 3 </a></p>
+
+        <p>Renault Clio Expression QS5, 16v, 1.2, 03 red, 3 door, semi auto,1 owner, 98k, fsh & bills, Mot June 2015, sunroof</p>      </div><!-- .news-content -->
+
+      <!-- .news-content -->
+
+      <div class="news-content">
+         <img src="img/car3.jpg">
+        <p><a href="#">Ford Ranger Thunder, 2004 top of the range 4x4 double
+</a></p>
+
+        <p>Ford Ranger Thunder, 2004 top of the range 4x4 double cab, 2.5 turbo diesel engine, very low mileage
+</p>
+      </div><!-- .news-content -->
+
+      <div class="news-content">
+         <img src="img/car4.jpg">
+        <p><a href="#">VOLKSWAGEN PASSAT S TDI, SILVER, 2003</a></p>
+
+        <p>VOLKSWAGEN PASSAT S TDI, SILVER, 2003, VW, Passat, Silver, 2003, 122000, 4 doors, Saloon, Manual, Diesel</p>
+      </div><!-- .news-content -->
+
+
+
+      
+
+    </div><!-- .news-preview -->
+
+  </div>
+</div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="tabbable">
+            <ul class="nav nav-tabs">
+              <li class="active"><a href="#tab1" data-toggle="tab"><i class="fa fa-clock-o"></i> Latest Listings</a></li>
+              <li><a href="#tab2" data-toggle="tab"><i class="fa fa-eye"></i> Popular on FiftyAds</a></li>
+            </ul>
+            <div class="tab-content">
+              <div class="tab-pane active" id="tab1">
+                <div id="carousel-example" class="carousel slide hidden-xs" data-ride="carousel"> 
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <div class="col-item">
+                            <h3>Builders</h3>
+                            <div class="photo"> <img src="img/lstngs-builders.jpg" class="img-responsive" alt="Builders" /> </div>
+                            <div class="info"> Construction and Fire Safety <span class="price">Contractors</span> <a href="#">View</a> </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="col-item">
+                            <h3>Footwear & Shoes</h3>
+                            <div class="photo"> <img src="img/lstngs-footwear.jpg" class="img-responsive" alt="Footwear & Shoes" /> </div>
+                            <div class="info"> Brand New Nike Air Max 90 <span class="price">&#xA3; 70</span> <a href="#">View</a> </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="col-item">
+                            <h3>Dogs & Puppies</h3>
+                            <div class="photo"> <img src="img/lstngs-dogs-puppies.jpg" class="img-responsive" alt="Dogs & Puppies" /> </div>
+                            <div class="info"> Fox red labrador pup <span class="price">&#xA3; 400</span> <a href="#">View</a> </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="col-item">
+                            <h3>Garden Services</h3>
+                            <div class="photo"> <img src="img/lstngs-gardening.jpg" class="img-responsive" alt="Garden Services" /> </div>
+                            <div class="info"> Masport cylinder mower <span class="price">&#xA3; 350</span> <a href="#">View</a> </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <div class="col-item">
+                            <h3>Flats for Rent</h3>
+                            <div class="photo"> <img src="img/lstngs-flats-rent.jpg" class="img-responsive" alt="Flats for Rent" /> </div>
+                            <div class="info"> One Bedroom Flat, Part <span class="price">&#xA3; 950</span> <a href="#">View</a> </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="col-item">
+                            <h3>Horses for Sale</h3>
+                            <div class="photo"> <img src="img/lstngs-horse.jpg" class="img-responsive" alt="Horses for Sale" /> </div>
+                            <div class="info"> 16.1Hh Dapple Gre 7 Year Old <span class="price">&#xA3; 6500</span> <a href="#">View</a> </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="col-item">
+                            <h3>Motor Homes</h3>
+                            <div class="photo"> <img src="img/lstngs-motorhomes.jpg" class="img-responsive" alt="Motor Homes" /> </div>
+                            <div class="info"> Motorhome. Excellent Tyres. <span class="price">&#xA3; 2500</span> <a href="#">View</a> </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="col-item">
+                            <h3>Mazda</h3>
+                            <div class="photo"> <img src="img/lstngs-mazda.jpg" class="img-responsive" alt="Mazda" /> </div>
+                            <div class="info"> MAZDA, GREEN, 1996, Mazda, <span class="price">&#xA3; 2,750</span> <a href="#">View</a> </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="controls hidden-xs"> <a class="left fa fa-chevron-left" href="#carousel-example"
+                        data-slide="prev"></a><a class="right fa fa-chevron-right pull-right" href="#carousel-example"
+                            data-slide="next"></a> </div>
+              </div>
+              <div class="tab-pane" id="tab2">
+                <div id="carousel-example" class="carousel slide hidden-xs" data-ride="carousel"> 
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner">
+                    <div class="item active">
+                      <div class="row">
+                        <div class="col-sm-3">
+                          <div class="col-item">
+                            <h3>Builders</h3>
+                            <div class="photo"> <img src="img/lstngs-builders.jpg" class="img-responsive" alt="Builders" /> </div>
+                            <div class="info"> Construction and Fire Safety <span class="price">Contractors</span> <a href="#">View</a> </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="col-item">
+                            <h3>Footwear & Shoes</h3>
+                            <div class="photo"> <img src="img/lstngs-footwear.jpg" class="img-responsive" alt="Footwear & Shoes" /> </div>
+                            <div class="info"> Brand New Nike Air Max 90 <span class="price">&#xA3; 70</span> <a href="#">View</a> </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="col-item">
+                            <h3>Dogs & Puppies</h3>
+                            <div class="photo"> <img src="img/lstngs-dogs-puppies.jpg" class="img-responsive" alt="Dogs & Puppies" /> </div>
+                            <div class="info"> Fox red labrador pup <span class="price">&#xA3; 400</span> <a href="#">View</a> </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="col-item">
+                            <h3>Garden Services</h3>
+                            <div class="photo"> <img src="img/lstngs-gardening.jpg" class="img-responsive" alt="Garden Services" /> </div>
+                            <div class="info"> Masport cylinder mower <span class="price">&#xA3; 350</span> <a href="#">View</a> </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="row">
+                        <div class="col-sm-4">
+                          <div class="col-item">
+                            <h3>Flats for Rent</h3>
+                            <div class="photo"> <img src="img/lstngs-flats-rent.jpg" class="img-responsive" alt="Flats for Rent" /> </div>
+                            <div class="info"> One Bedroom Flat, Part <span class="price">&#xA3; 950</span> <a href="#">View</a> </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="col-item">
+                            <h3>Horses for Sale</h3>
+                            <div class="photo"> <img src="img/lstngs-horse.jpg" class="img-responsive" alt="Horses for Sale" /> </div>
+                            <div class="info"> 16.1Hh Dapple Gre 7 Year Old <span class="price">&#xA3; 6500</span> <a href="#">View</a> </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-4">
+                          <div class="col-item">
+                            <h3>Motor Homes</h3>
+                            <div class="photo"> <img src="img/lstngs-motorhomes.jpg" class="img-responsive" alt="Motor Homes" /> </div>
+                            <div class="info"> Motorhome. Excellent Tyres. <span class="price">&#xA3; 2500</span> <a href="#">View</a> </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-3">
+                          <div class="col-item">
+                            <h3>Mazda</h3>
+                            <div class="photo"> <img src="img/lstngs-mazda.jpg" class="img-responsive" alt="Mazda" /> </div>
+                            <div class="info"> MAZDA, GREEN, 1996, Mazda, <span class="price">&#xA3; 2,750</span> <a href="#">View</a> </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="controls hidden-xs"> <a class="left fa fa-chevron-left" href="#carousel-example"
+                        data-slide="prev"></a><a class="right fa fa-chevron-right pull-right" href="#carousel-example"
+                            data-slide="next"></a> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 about-site"> <img src="img/logo-footer.png" alt="FiftyAds.com">
+          <p>Quisque laoreet neque vel dui tempor hendrerit. Sed lobortis vehicula turpis, quis consectetur nibh pharetra vitae. Maecenas condimentum diam dolor, quis tristique tellus blandit sollicitudin. Nullam sodales tincidunt ante ut faucibus. Suspendisse dapibus lobortis nulla eu congue.</p>
+        </div>
+        <div class="col-lg-2">
+          <h3><i class="fa fa-users"></i> Corporate</h3>
+          <a href="about-us.html"><i class="fa fa-angle-double-right"></i> About Fifty Ads</a> <a href="contact.html"><i class="fa fa-angle-double-right"></i> Contact FiftyAds</a> <a href="busniess-ads.html"><i class="fa fa-angle-double-right"></i> Business Advertising</a> <a href="privacy-policy.html"><i class="fa fa-angle-double-right"></i> Privacy Policy</a> <a href="all-categories.html"><i class="fa fa-angle-double-right"></i> Site Map</a> </div>
+        <div class="col-lg-2 popular-categories">
+          <h3><img src="img/categories_icon.png"> Popular Categories</h3>
+          <a href="properties.html"><i class="fa fa-angle-double-right"></i> Properties <span>(5400)</span></a> <a href="busniess-services.html"><i class="fa fa-angle-double-right"></i> Business Services <span>(1200)</span></a> <a href="motors.html"><i class="fa fa-angle-double-right"></i> Motors <span>(10279)</span></a> <a href="jobs.html"><i class="fa fa-angle-double-right"></i> Jobs <span>(11400)</span></a> <a href="events.html"><i class="fa fa-angle-double-right"></i> Events <span>(7239)</span></a> </div>
+        <div class="col-lg-3 pull-right">
+          <div class="get-deal">
+            <h3><i class="fa fa-envelope"></i> Get deal</h3>
+            <div class="block-content-info">
+              <p>Get exclusive deal offers delivered right to your inbox</p>
+              <div class="input-box">
+                <input title="Sign up for our newsletter" onfocus="if(this.value=='Enter your email...') this.value='';" onblur="if(this.value=='') this.value='Enter your email...';" type="text" name="email" Placeholder="Enter your email..." />
+                <button class="button " type="submit"><span><i class="fa fa-arrow-circle-o-right"></i> </span></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-info">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6"> &copy; 2014 FiftyAds.com | All Rights Reserved. </div>
+        <div class="col-lg-6 text-right"> Created and Maintained by <a href="http://crosswindtechnologies.net/" target="_blank">Crosswind Technologies</a> </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- JavaScript --> 
+<script src="js/jquery-1.10.2.js"></script> 
+<script src="js/bootstrap.js"></script> 
+
+<!-- Bootstrap Select --> 
+
+<script src="js/jquery.nicescroll.min.js"></script> 
+<script>
+
+// Show Overflow of Body when Everything has Loaded //
+$(window).load(function(){
+    $("body").css("overflow", "auto");        
+    var nice=$('html').niceScroll({cursorborder:"",cursorcolor:"#f39c12",cursorwidth:"4px"});
+});</script> 
+<script src="js/jquery.newsTicker.js"></script> 
+<script>
+    		
+            var nt_title = $('#nt-title').newsTicker({
+                row_height: 30,
+                max_rows: 1,
+                duration: 3000,
+                pauseOnHover: 0
+            });
+           var nt_title1 = $('#nt-title1').newsTicker({
+                row_height: 30,
+                max_rows: 1,
+                duration: 3000,
+                pauseOnHover: 0
+            });
+        </script> 
+<script type="text/javascript">
+$(document).ready(function(){
+    $(".featured-thumbnail").tooltip();   
+});
+
+		</script> 
+<script>
+	$('#news-carousel').carousel({
+		interval:   4000
+	});
+	
+		$('.tab-content .carousel').carousel({
+    interval: false
+}) ;
+$('#carousel-tab2').carousel({
+    interval: false
+}) 
+	
+</script> 
+<script type="text/javascript" src="js/bootstrap-select.js"></script> 
+<script type="text/javascript">
+        $(window).on('load', function () {
+
+            $('.selectpicker').selectpicker({
+                'selectedText': 'cat'
+            });
+
+            // $('.selectpicker').selectpicker('hide');
+        });
+    </script> 
+ 
+<script type="text/javascript" src="js/sm-megamenu.js"></script> 
+<script>$(function(){
+$('a[title]').tooltip();
+});
+$('#states').click(function() {
+    $('.states').slideToggle('fast');
+    return false;
+});
+
+
+function toggleChevron(e) {
+    $(e.target)
+        .prev('.panel-heading')
+        .find("i.indicator")
+        .toggleClass('fa-caret-down fa-caret-right');
+}
+$('#accordion').on('hidden.bs.collapse', toggleChevron);
+$('#accordion').on('shown.bs.collapse', toggleChevron);
+</script>
+<script>
+$(document).ready(function() {
+    var $btnSets = $('#responsive'),
+    $btnLinks = $btnSets.find('a');
+ 
+    $btnLinks.click(function(e) {
+        e.preventDefault();
+        $(this).siblings('a.active').removeClass("active");
+        $(this).addClass("active");
+        var index = $(this).index();
+        $("div.user-menu>div.user-menu-content").removeClass("active");
+        $("div.user-menu>div.user-menu-content").eq(index).addClass("active");
+    });
+});
+
+$( document ).ready(function() {
+    $("[rel='tooltip']").tooltip();    
+ 
+    $('.view').hover(
+        function(){
+            $(this).find('.caption').slideDown(250); //.fadeIn(250)
+        },
+        function(){
+            $(this).find('.caption').slideUp(250); //.fadeOut(205)
+        }
+    ); 
+});
+</script>
+<script type="text/javascript" src="js/vertical.news.slider.js"></script> 
+<script>
+$('.dropdown-menu').find('.navbar-form').click(function (e) {
+    e.stopPropagation();
+  });
+</script>
+ <script>
+ $(document).ready(function() {
+    $('#tab1').carousel({
+	    interval: 10000
+	})
+});
+        </script>
+</body>
+</html>
